@@ -1,9 +1,13 @@
 import streamlit as st
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 import random
+import json
+from PIL import Image, ImageDraw, ImageFont
+import io
+import base64
 
-# ========== 配置页面 ==========
+# ========== 页面配置 ==========
 st.set_page_config(
     page_title="气候运势",
     page_icon="🌍",
@@ -11,19 +15,32 @@ st.set_page_config(
 )
 
 # ========== 高德API配置 ==========
-# ⚠️ 把下面的字符串替换成你刚才拿到的真实API Key
 AMAP_KEY = "8432df6237d4926456b946918b1607f6"
 
-# ========== 天气函数（支持全国任意城市，直接用城市名）==========
+# ========== 城市编码对照表 ==========
+CITY_CODES = {
+    "南京": "320100",
+    "北京": "110000",
+    "上海": "310000",
+    "广州": "440100",
+    "深圳": "440300",
+    "杭州": "330100",
+    "苏州": "320500",
+    "无锡": "320200",
+    "常州": "320400",
+    "镇江": "321100"
+}
+
+# ========== 天气函数 ==========
 def get_weather(city_name):
-    """调用高德API获取实时天气（支持全国任意城市）"""
-    if not city_name or city_name.strip() == "":
-        return None, "请输入城市名称"
+    city_code = CITY_CODES.get(city_name)
+    if not city_code:
+        return None, "暂不支持该城市"
     
     url = "https://restapi.amap.com/v3/weather/weatherInfo"
     params = {
         "key": AMAP_KEY,
-        "city": city_name,
+        "city": city_code,
         "extensions": "base"
     }
     
@@ -37,339 +54,237 @@ def get_weather(city_name):
                 "city": w["city"],
                 "weather": w["weather"],
                 "temperature": w["temperature"],
-                "wind": w["winddirection"],
-                "humidity": w.get("humidity", "未知")
+                "wind": w["winddirection"]
             }, None
         else:
-            return None, "未找到该城市，请输入正确的国内城市名称（如：北京、上海、广州）"
+            return None, "获取天气失败"
     except Exception as e:
         return None, f"网络错误: {str(e)}"
 
 # ========== 运势函数 ==========
 def get_fortune():
-    """基于日期生成运势，同一天运势一致"""
     random.seed(int(datetime.now().strftime("%Y%m%d")))
-    
     levels = ["大吉", "中吉", "小吉", "吉", "末吉"]
     colors = ["🔴 红色", "🟢 绿色", "🔵 蓝色", "🟡 黄色", "🟣 紫色"]
-    advices = [
-        "今天适合学习新知识",
-        "与人合作会有好结果",
-        "注意休息，保持精力",
-        "适合尝试新事物",
-        "保持乐观心态"
-    ]
-    
     return {
         "level": random.choice(levels),
-        "color": random.choice(colors),
-        "advice": random.choice(advices)
+        "color": random.choice(colors)
     }
 
-# ========== 14天内容清单（日汉双语，14天内不重复）==========
-DAILY_CONTENT = [
-    {  # Day 1
-        "keyword_ja": "CBAM（炭素国境調整メカニズム）",
-        "keyword_zh": "CBAM（碳边境调节机制）",
-        "desc_ja": "EUが2026年から本格導入する制度。海外からの輸入品に対し、製造時のCO2排出量に応じた炭素コストを課す。",
-        "desc_zh": "欧盟将于2026年全面实施的制度。对海外进口产品，根据其生产过程中的CO2排放量征收碳成本。",
-        "why_ja": "気候変動対策と国際貿易ルールの両立が問われる重要な政策。中国・インドは「隠れた保護主義」と反発。",
-        "why_zh": "这是检验气候行动与贸易规则能否平衡的关键政策。中国、印度批评其为「隐蔽的保护主义」。",
-        "topic_ja": "EUのCBAMをめぐり、中国とインドが強く反発。WTOへの提訴も辞さない構えを見せている。",
-        "topic_zh": "围绕欧盟CBAM，中国和印度强烈反对，甚至表示可能诉诸WTO争端解决机制。",
-        "quote_ja": "気候変動はもはや未来の話ではない。私たちはすでにその影響の中で生きている。",
-        "quote_zh": "气候变化不再是未来的事。我们已经生活在它的影响之中。",
-        "quote_author": "アントニオ・グテーレス（国連事務総長）",
-        "detail_ja": "**CBAMの詳細解説**\n\n1. **背景**: EUは2005年から排出量取引制度（EU ETS）を運用。しかし無償割当ではカーボンリーケージを完全には防げない。\n2. **対象製品**: 鉄鋼、アルミニウム、セメント、肥料、水素。2026年から段階的に適用拡大。\n3. **計算方法**: 輸入品の製造時排出量 × EU ETSの炭素価格 - 原産国で支払った炭素コスト。\n4. **課題**: 製品排出量の計算が複雑。中国やインドはWTOに違反すると主張。",
-        "detail_zh": "**CBAM详细解读**\n\n1. **背景**: 欧盟自2005年起运行ETS碳交易体系。但免费配额无法完全防止碳泄漏。\n2. **适用产品**: 钢铁、铝、水泥、化肥、氢气。2026年起分阶段扩大范围。\n3. **计算方式**: 进口产品生产排放量 × EU ETS碳价 - 原产国已支付的碳成本。\n4. **争议**: 产品碳排放核算复杂。中印认为违反WTO规则。"
-    },
-    {  # Day 2
-        "keyword_ja": "カーボンリーケージ",
-        "keyword_zh": "碳泄漏",
-        "desc_ja": "排出規制の厳しい国から規制の緩い国へ、生産拠点が移転する現象。",
-        "desc_zh": "生产活动从排放管制严格的国家向管制宽松的国家转移的现象。",
-        "why_ja": "気候変動対策の効果が他国への移転で相殺され、世界全体の排出量が減らないリスクがある。",
-        "why_zh": "气候政策的效果可能因生产转移而被抵消，导致全球排放总量不降反增。",
-        "topic_ja": "EUはカーボンリーケージを防ぐためCBAMを導入。しかし輸出還付がないため、EU製品は海外市場で不利になる懸念がある。",
-        "topic_zh": "欧盟为防止碳泄漏引入CBAM。但由于没有出口退税，欧盟产品在海外市场可能处于劣势。",
-        "quote_ja": "私たちが未来の世代に残せる最も大きな贈り物は、希望ではなく、行動である。",
-        "quote_zh": "我们能留给后代最宝贵的礼物不是希望，而是行动。",
-        "quote_author": "グレタ・トゥーンベリ",
-        "detail_ja": "**カーボンリーケージの詳細**\n\n1. **メカニズム**: 排出規制が厳しい国では生産コストが上昇。企業は規制の緩い国へ生産移転。\n2. **影響**: 移転先の国で排出量が増加し、地球全体の排出削減効果が相殺される。\n3. **対策**: CBAMのような国境炭素調整が有効。しかし輸出還付がないと不完全。",
-        "detail_zh": "**碳泄漏详解**\n\n1. **机制**: 排放管制严格的国家生产成本上升，企业将生产转移到管制宽松的国家。\n2. **影响**: 转移目的地排放增加，全球减排效果被抵消。\n3. **对策**: CBAM等碳边境调节有效。但若无出口退税则不完全。"
-    },
-    {  # Day 3
-        "keyword_ja": "IRA（インフレ抑制法）",
-        "keyword_zh": "IRA（通胀削减法）",
-        "desc_ja": "2022年に米国が成立させた気候変動対策と医療費削減のための法律。脱炭素技術の導入に税額控除を提供する。",
-        "desc_zh": "美国2022年通过的气候行动与医疗成本削减法案。为脱碳技术引入提供税收抵免。",
-        "why_ja": "米国製の優遇措置（原産国要件）が含まれており、EUや日本から「保護主義的」と批判されている。",
-        "why_zh": "法案中包含对美国产品的优惠措施（原产地要求），被欧盟和日本批评为「保护主义」。",
-        "topic_ja": "フランスのマクロン大統領はIRAを「超攻撃的」と批判。EUは対抗策として「ネットゼロ産業法（NZIA）」を制定した。",
-        "topic_zh": "法国马克龙总统批评IRA「超攻击性」。欧盟为此制定了「净零工业法（NZIA）」作为对抗措施。",
-        "quote_ja": "絶望してはいけない。絶望は行動を止めてしまう。私たちにはまだ時間がある。",
-        "quote_zh": "不要绝望。绝望会阻止行动。我们还有时间。",
-        "quote_author": "アル・ゴア（元米国副大統領）",
-        "detail_ja": "**IRAの詳細解説**\n\n1. **EV減税**: 1台あたり最大7500ドルの税額控除。ただし北米最終組立が必須。\n2. **経済安全保障**: 2024年以降、懸念国の事業体が製造したバッテリー部品は減税対象外。\n3. **影響**: EUはNZIAを制定。日本もGX政策で対抗。",
-        "detail_zh": "**IRA详解**\n\n1. **EV补贴**: 每辆最高7500美元税收抵免。但必须在北美最终组装。\n2. **经济安全**: 2024年起，关切国实体制造的电池部件不享受补贴。\n3. **影响**: 欧盟制定NZIA应对。日本也推出GX政策。"
-    },
-    {  # Day 4
-        "keyword_ja": "無償割当",
-        "keyword_zh": "免费配额",
-        "desc_ja": "排出量取引制度で、政府が企業に無償で配布する排出枠。国際競争にさらされる産業の負担を軽減する。",
-        "desc_zh": "在碳排放交易体系中，政府免费分配给企业的排放配额。用于减轻面临国际竞争的产业的负担。",
-        "why_ja": "CBAMの導入に伴い、EUは2034年までに無償割当を廃止する予定。輸入品と域内製品の競争条件を平準化するため。",
-        "why_zh": "随着CBAM的引入，欧盟计划在2034年前取消免费配额，以平衡进口产品与域内产品的竞争条件。",
-        "topic_ja": "無償割当の段階的廃止に伴い、鉄鋼・セメントなどの産業はコスト増に直面。カーボンリーケージのリスクも懸念される。",
-        "topic_zh": "随着免费配额的逐步取消，钢铁、水泥等行业面临成本上升。碳泄漏风险也令人担忧。",
-        "quote_ja": "市場は素晴らしい発明だが、気候変動という問題は放置できない。",
-        "quote_zh": "市场是伟大的发明，但气候变化这个问题不能放任不管。",
-        "quote_author": "ニコラ・スターン（ロンドン経済学院教授）",
-        "detail_ja": "**無償割当の詳細**\n\n1. **目的**: 国際競争にさらされる産業の負担を軽減し、カーボンリーケージを防止。\n2. **削減スケジュール**: 2026年から段階的に削減、2034年にゼロへ。\n3. **課題**: 無償割当廃止後のコスト増をどう吸収するか。",
-        "detail_zh": "**免费配额详解**\n\n1. **目的**: 减轻面临国际竞争的产业负担，防止碳泄漏。\n2. **取消时间表**: 2026年起分阶段削减，2034年降为零。\n3. **挑战**: 如何消化免费配额取消后的成本增加。"
-    },
-    {  # Day 5
-        "keyword_ja": "輸出還付",
-        "keyword_zh": "出口退税",
-        "desc_ja": "国内で課した炭素コストを、輸出時に還付する制度。カーボンリーケージを完全に防ぐために必要とされる。",
-        "desc_zh": "将国内征收的碳成本在出口时予以退还的制度。被认为是完全防止碳泄漏的必要措施。",
-        "why_ja": "EUのCBAMには輸出還付が含まれていないため、EU製品は海外市場で不利になる懸念がある。WTOルールとの整合性が課題。",
-        "why_zh": "欧盟CBAM不包含出口退税，欧盟产品在海外市场可能处于劣势。如何符合WTO规则是难题。",
-        "topic_ja": "日本は輸出依存度が高いため、輸出還付の実現は重要課題。化石燃料賦課金を活用した還付の可能性が検討されている。",
-        "topic_zh": "日本出口依存度高，实现出口退税是重要课题。正在探讨利用化石燃料附加税进行退税的可能性。",
-        "quote_ja": "貿易と環境は対立するものではなく、協力すべき分野である。",
-        "quote_zh": "贸易与环境并非对立，而是应该合作的领域。",
-        "quote_author": "パスカル・ラミー（元WTO事務局長）",
-        "detail_ja": "**輸出還付の詳細**\n\n1. **必要性**: 輸出製品の国際競争力を維持するため。\n2. **課題**: WTOの補助金協定に違反する恐れ。\n3. **日本の対応**: 化石燃料賦課金を活用した還付スキームを検討中。",
-        "detail_zh": "**出口退税详解**\n\n1. **必要性**: 维持出口产品的国际竞争力。\n2. **挑战**: 可能违反WTO补贴协定。\n3. **日本对策**: 正在探讨利用化石燃料附加税的退税方案。"
-    },
-    {  # Day 6
-        "keyword_ja": "経済安全保障",
-        "keyword_zh": "经济安全保障",
-        "desc_ja": "戦略的に重要な物資のサプライチェーンを確保し、他国からの圧力に耐えられる経済構造を構築する考え方。",
-        "desc_zh": "确保战略性重要物资的供应链安全，构建能够抵御他国压力的经济结构。",
-        "why_ja": "IRAのEV減税には「懸念国の事業体」を排除する経済安全保障条項が含まれる。中国からの依存脱却が目的。",
-        "why_zh": "IRA的EV税收优惠包含排除「关切国实体」的经济安全保障条款，旨在摆脱对中国的依赖。",
-        "topic_ja": "日本も経済安全保障の観点から、重要鉱物のサプライチェーン強化を推進。日米重要鉱物協定を締結した。",
-        "topic_zh": "日本也从经济安全保障角度推动关键矿物供应链强化。已签署日美关键矿物协议。",
-        "quote_ja": "安全保障と気候変動対策は、もはや切り離せない。",
-        "quote_zh": "安全保障与气候变化对策已密不可分。",
-        "quote_author": "ジェイク・サリバン（米国国家安全保障問題担当大統領補佐官）",
-        "detail_ja": "**経済安全保障の詳細**\n\n1. **背景**: 中国の産業支援戦略「中国製造2025」への対応。\n2. **重要鉱物**: リチウム、ニッケル、コバルトなどEVバッテリーに必須。\n3. **国際協調**: 日米豪など「鉱物セキュリティパートナーシップ」を構築。",
-        "detail_zh": "**经济安全保障详解**\n\n1. **背景**: 应对中国产业支持战略「中国制造2025」。\n2. **关键矿物**: 锂、镍、钴等EV电池必需材料。\n3. **国际合作**: 构建日美澳等「矿产安全伙伴关系」。"
-    },
-    {  # Day 7
-        "keyword_ja": "GX（グリーントランスフォーメーション）",
-        "keyword_zh": "GX（绿色转型）",
-        "desc_ja": "日本の脱炭素型経済成長戦略。2023年からの10年間で20兆円の政府支援を行う。",
-        "desc_zh": "日本的脱碳型经济增长战略。自2023年起10年内提供20兆日元的政府支援。",
-        "why_ja": "カーボンプライシング（化石燃料賦課金＋GX-ETS）と投資支援を組み合わせた独自のアプローチ。",
-        "why_zh": "将碳定价（化石燃料附加费＋GX-ETS）与投资支持相结合，是日本独有的方式。",
-        "topic_ja": "GX政策には「戦略分野国内生産促進税制」が含まれる。生産量に応じた減税で国内生産を促進する。",
-        "topic_zh": "GX政策包含「战略领域国内生产促进税制」。根据产量提供税收优惠，促进国内生产。",
-        "quote_ja": "日本は自由貿易の旗手として、脱炭素と自由貿易の両立を示さなければならない。",
-        "quote_zh": "日本作为自由贸易的旗手，必须展示脱碳与自由贸易可以共存。",
-        "quote_author": "西村康稔（元経済産業大臣）",
-        "detail_ja": "**GXの詳細解説**\n\n1. **投資支援**: 10年間で20兆円。企業の脱炭素投資を後押し。\n2. **カーボンプライシング**: 化石燃料賦課金（2028年〜）+ GX-ETS。\n3. **国際競争**: 輸出還付の課題に直面。",
-        "detail_zh": "**GX详解**\n\n1. **投资支持**: 10年20兆日元，推动企业脱碳投资。\n2. **碳定价**: 化石燃料附加费（2028年起）+ GX-ETS。\n3. **国际竞争**: 面临出口退税难题。"
-    },
-    {  # Day 8
-        "keyword_ja": "グリーン貿易戦争",
-        "keyword_zh": "绿色贸易战",
-        "desc_ja": "気候変動対策を巡る米欧中の通商紛争。IRAやCBAMが引き金となっている。",
-        "desc_zh": "围绕气候政策的欧美中贸易争端。由IRA和CBAM引发。",
-        "why_ja": "脱炭素政策が保護主義に転化するリスク。自由貿易体制の危機。",
-        "why_zh": "脱碳政策转化为保护主义的风险。自由贸易体制面临危机。",
-        "topic_ja": "米国のIRA、EUのCBAM、中国の産業支援。3極のグリーン政策が衝突している。",
-        "topic_zh": "美国的IRA、欧盟的CBAM、中国的产业支持。三极绿色政策正在碰撞。",
-        "quote_ja": "気候変動対策は保護主義の隠れ蓑になってはならない。",
-        "quote_zh": "气候政策不应成为保护主义的掩护。",
-        "quote_author": "ロベルト・アゼベド（元WTO事務局長）",
-        "detail_ja": "**グリーン貿易戦争の詳細**\n\n1. **米国**: IRAの原産国要件が保護主義的。\n2. **EU**: CBAMで炭素国境調整。輸出還付なし。\n3. **中国**: 産業補助金でEV・再エネで優位。",
-        "detail_zh": "**绿色贸易战详解**\n\n1. **美国**: IRA的原产地要求具有保护主义色彩。\n2. **欧盟**: CBAM碳边境调节，无出口退税。\n3. **中国**: 产业补贴使其在EV和可再生能源领域占优。"
-    },
-    {  # Day 9
-        "keyword_ja": "サプライチェーン強靭化",
-        "keyword_zh": "供应链韧性",
-        "desc_ja": "重要物資の供給途絶リスクに備え、調達先を多様化・分散化する取り組み。",
-        "desc_zh": "为应对重要物资断供风险，实现采购来源多元化和分散化。",
-        "why_ja": "パンデミックや地政学リスクで重要性増。脱炭素分野でも必須。",
-        "why_zh": "疫情影响和地缘政治风险使其重要性上升。脱碳领域同样必需。",
-        "topic_ja": "日本は重要鉱物のサプライチェーン強靭化のため、豪州やカナダと連携。",
-        "topic_zh": "日本为强化关键矿物供应链韧性，与澳大利亚和加拿大合作。",
-        "quote_ja": "サプライチェーンのレジリエンスは経済安全保障の根幹である。",
-        "quote_zh": "供应链韧性是经济安全的基础。",
-        "quote_author": "経済産業省",
-        "detail_ja": "**サプライチェーン強靭化の詳細**\n\n1. **対象**: 半導体、重要鉱物、医薬品、蓄電池。\n2. **手法**: 調達先の複数化、在庫確保、国内生産支援。\n3. **国際協調**: 日米豪印のQuadサプライチェーン協議。",
-        "detail_zh": "**供应链韧性详解**\n\n1. **对象**: 半导体、关键矿物、医药品、蓄电池。\n2. **方法**: 采购多元化、库存保障、国内生产支持。\n3. **国际合作**: 日美澳印Quad供应链对话。"
-    },
-    {  # Day 10
-        "keyword_ja": "排出量取引制度（ETS）",
-        "keyword_zh": "碳排放交易体系",
-        "desc_ja": "企業に排出枠の納付を義務付け、市場メカニズムで排出削減を促す制度。",
-        "desc_zh": "要求企业缴纳排放配额，利用市场机制促进减排的制度。",
-        "why_ja": "EU、中国、韓国、日本（GX-ETS）など多くの国で導入。",
-        "why_zh": "在欧盟、中国、韩国、日本（GX-ETS）等许多国家实施。",
-        "topic_ja": "EU ETSの炭素価格は高騰。2023年には1トンあたり100ユーロを超えた。",
-        "topic_zh": "EU ETS碳价飙升，2023年每吨超过100欧元。",
-        "quote_ja": "炭素に価格をつけることが、最も効果的な気候政策の一つである。",
-        "quote_zh": "给碳定价是最有效的气候政策之一。",
-        "quote_author": "クリスティーヌ・ラガルド（ECB総裁）",
-        "detail_ja": "**ETSの詳細**\n\n1. **仕組み**: 排出枠のキャップ（上限）を設定。不足分は市場で購入。\n2. **無償割当**: 競争産業には無償配布。段階的廃止へ。\n3. **国際連携**: EUとスイスのETSは連結。",
-        "detail_zh": "**ETS详解**\n\n1. **机制**: 设定排放配额上限，不足部分从市场购买。\n2. **免费配额**: 竞争产业免费分配，正在逐步取消。\n3. **国际链接**: 欧盟与瑞士ETS已连接。"
-    },
-    {  # Day 11
-        "keyword_ja": "重要鉱物",
-        "keyword_zh": "关键矿物",
-        "desc_ja": "EVバッテリーや再エネ機器に必須の鉱物。リチウム、ニッケル、コバルトなど。",
-        "desc_zh": "EV电池和可再生能源设备必需的矿物。如锂、镍、钴等。",
-        "why_ja": "中国が精製工程の大半を支配。供給リスクが経済安全保障上の課題。",
-        "why_zh": "中国控制着大部分精炼环节。供应风险成为经济安全挑战。",
-        "topic_ja": "日米は重要鉱物協定を締結。IRAのEV減税対象となる。",
-        "topic_zh": "日美签署关键矿物协议。可享受IRA的EV税收优惠。",
-        "quote_ja": "重要鉱物は21世紀の石油である。",
-        "quote_zh": "关键矿物是21世纪的石油。",
-        "quote_author": "ジョー・バイデン（米国大統領）",
-        "detail_ja": "**重要鉱物の詳細**\n\n1. **種類**: リチウム、ニッケル、コバルト、黒鉛、レアアース。\n2. **中国依存**: 精製工程の70-90%を中国が支配。\n3. **対策**: リサイクル促進、代替材料開発、調達先多様化。",
-        "detail_zh": "**关键矿物详解**\n\n1. **种类**: 锂、镍、钴、石墨、稀土。\n2. **对华依赖**: 中国控制70-90%的精炼环节。\n3. **对策**: 促进回收、开发替代材料、采购多元化。"
-    },
-    {  # Day 12
-        "keyword_ja": "パリ協定",
-        "keyword_zh": "巴黎协定",
-        "desc_ja": "2015年に採択された気候変動対策の国際枠組み。各国がNDCを提出。",
-        "desc_zh": "2015年通过的气候变化应对国际框架。各国提交NDC（国家自主贡献）。",
-        "why_ja": "脱炭素化の世界的な基盤。しかし各国の対策強度には大きな差がある。",
-        "why_zh": "全球脱碳的基础框架。但各国政策力度差异巨大。",
-        "topic_ja": "パリ協定の目標達成には、現在の政策では不十分。CBAMなど新たな手法が必要。",
-        "topic_zh": "实现巴黎协定目标，当前政策仍不足。需要CBAM等新方法。",
-        "quote_ja": "パリ協定は人類の生存に関する取り決めである。",
-        "quote_zh": "巴黎协定关乎人类生存。",
-        "quote_author": "クリスチアナ・フィゲレス（元UNFCCC事務局長）",
-        "detail_ja": "**パリ協定の詳細**\n\n1. **目標**: 気温上昇を2°C未満に抑制。さらに1.5°Cを目指す。\n2. **NDC**: 各国が5年ごとに削減目標を更新。\n3. **課題**: 現在の目標では1.5°C達成が困難。",
-        "detail_zh": "**巴黎协定详解**\n\n1. **目标**: 控制温升在2°C以内，努力达到1.5°C。\n2. **NDC**: 各国每5年更新减排目标。\n3. **挑战**: 当前目标难以实现1.5°C目标。"
-    },
-    {  # Day 13
-        "keyword_ja": "ネットゼロ",
-        "keyword_zh": "净零排放",
-        "desc_ja": "人為的な温室効果ガスの排出を実質ゼロにする目標。多くの国が2050年目標を設定。",
-        "desc_zh": "将人为温室气体排放实质降为零的目标。许多国家设定了2050年目标。",
-        "why_ja": "ネットゼロ達成には、排出削減と残存排出の吸収（除去）の両方が必要。",
-        "why_zh": "实现净零既需要减排，也需要吸收（移除）残余排放。",
-        "topic_ja": "日本は2050年ネットゼロを宣言。GX政策はその実現手段。",
-        "topic_zh": "日本宣布2050年净零目标。GX政策是实现手段。",
-        "quote_ja": "ネットゼロは到達可能な目標である。行動あるのみ。",
-        "quote_zh": "净零是可实现的目标。只需行动。",
-        "quote_author": "ファティ・ビロル（IEA事務局長）",
-        "detail_ja": "**ネットゼロの詳細**\n\n1. **排出削減**: 再生可能エネルギー、EV、水素など。\n2. **除去技術**: DACCS、BECCS、植林など。\n3. **課題**: 除去技術はコスト高。まず削減が優先。",
-        "detail_zh": "**净零排放详解**\n\n1. **减排**: 可再生能源、电动汽车、氢能等。\n2. **移除技术**: DACCS、BECCS、植树造林等。\n3. **挑战**: 移除技术成本高，优先减排。"
-    },
-    {  # Day 14
-        "keyword_ja": "CBAMの影響",
-        "keyword_zh": "CBAM的影响",
-        "desc_ja": "CBAMは輸出国に炭素コストを課す。中国・インドは反発、日本は注視。",
-        "desc_zh": "CBAM对出口国征收碳成本。中印反对，日本密切关注。",
-        "why_ja": "日本への直接影響は小さいが、対象拡大（自動車・機械）で甚大な影響。",
-        "why_zh": "对日本直接影响小，但如果扩大到汽车、机械，影响巨大。",
-        "topic_ja": "CBAMが自動車・産業機械に拡大すれば、日本の対EU輸出の大半が対象になるリスク。",
-        "topic_zh": "若CBAM扩大到汽车和产业机械，日本对欧盟出口大部分可能成为征税对象。",
-        "quote_ja": "CBAMは保護主義ではなく、公平な競争のためのルールである。",
-        "quote_zh": "CBAM不是保护主义，而是公平竞争的规则。",
-        "quote_author": "ウルズラ・フォン・デア・ライエン（欧州委員長）",
-        "detail_ja": "**CBAMの日本への影響**\n\n1. **現状**: 鉄鋼・アルミなど直接影響は小さい。\n2. **リスク**: 自動車・産業機械への拡大で、対EU輸出上位9品目中7品目が対象。\n3. **対応**: GX-ETSの設計が鍵。輸出還付の実現が必要。",
-        "detail_zh": "**CBAM对日本的影响**\n\n1. **现状**: 钢铁、铝等直接影响小。\n2. **风险**: 扩大到汽车、产业机械后，对欧盟出口前10中有7个成为征税对象。\n3. **对策**: GX-ETS的设计是关键。需要实现出口退税。"
-    }
-]
+# ========== 鼓励语池 ==========
+ENCOURAGE_POOL = {
+    "I人": [
+        {"ja": "一人の時間は充電の時間。今日は「CBAM」を調べてみよう。", "zh": "独处不是孤独，是充电。今天查一下CBAM是什么。"},
+        {"ja": "静かな場所で、今日の気候ニュースを読んでみよう。", "zh": "在安静的地方，读一读今天的气候新闻。"},
+        {"ja": "自分のペースでいい。今日も一歩前に進んだ。", "zh": "按自己的节奏就好。今天又前进了一步。"}
+    ],
+    "E人": [
+        {"ja": "今日覚えた言葉を、誰かに話してみよう。", "zh": "把今天学到的词，讲给一个人听。"},
+        {"ja": "友達と「カーボンボーダー」について話してみよう。", "zh": "和朋友聊聊“碳边境税”。"},
+        {"ja": "今日のニュースをシェアして、みんなの意見を聞こう。", "zh": "分享今天的新闻，听听大家的看法。"}
+    ],
+    "F人": [
+        {"ja": "今日のキーワードは、あなたにとってどんな意味がある？", "zh": "今天的关键词，对你来说有什么意义？"},
+        {"ja": "優しさは力になる。今日も誰かに優しく。", "zh": "温柔就是力量。今天也对一个人温柔。"},
+        {"ja": "気候変動は遠い話じゃない。あなたの一歩が未来を変える。", "zh": "气候变化不是遥远的事。你的一步会改变未来。"}
+    ]
+}
 
-# ========== 获取今日内容（14天循环）==========
-day_of_year = datetime.now().timetuple().tm_yday
-content_index = (day_of_year - 1) % len(DAILY_CONTENT)
-today = DAILY_CONTENT[content_index]
+def get_encourage(personality):
+    pool = ENCOURAGE_POOL.get(personality, ENCOURAGE_POOL["I人"])
+    if "encourage_history" not in st.session_state:
+        st.session_state.encourage_history = {}
+    if personality not in st.session_state.encourage_history:
+        st.session_state.encourage_history[personality] = []
+    
+    history = st.session_state.encourage_history[personality]
+    available = [e for e in pool if e not in history]
+    
+    if not available:
+        st.session_state.encourage_history[personality] = []
+        available = pool.copy()
+    
+    selected = random.choice(available)
+    st.session_state.encourage_history[personality].append(selected)
+    return selected
+
+# ========== 打卡功能 ==========
+def checkin():
+    today = datetime.now().strftime("%Y-%m-%d")
+    try:
+        with open("checkin.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        data = {"last_date": "", "continuous": 0, "total": 0}
+    
+    last_date = data.get("last_date", "")
+    if last_date != today:
+        if last_date == (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d"):
+            data["continuous"] += 1
+        elif last_date == "":
+            data["continuous"] = 1
+        else:
+            data["continuous"] = 1
+        data["total"] = data.get("total", 0) + 1
+        data["last_date"] = today
+        with open("checkin.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    return data
+
+# ========== 加载今日新闻 ==========
+def load_today_news():
+    try:
+        with open("daily_news.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data
+    except:
+        return {
+            "one_sentence": "今日暂无重要气候新闻",
+            "summary": "",
+            "url": "",
+            "source": "生态环境部",
+            "date": datetime.now().strftime("%Y-%m-%d")
+        }
+
+# ========== 初始化 ==========
+if "personality" not in st.session_state:
+    st.session_state.personality = "I人"
 
 # ========== 页面标题 ==========
 st.title("🌍 气候运势")
-st.caption("每日日汉双语 · 气候变化下的国际政治科普")
-st.markdown("***打开即用，无需输入。每天自动更新，14天不重复。***")
+st.caption("每日日汉双语 · 气候政治科普")
 
-# ========== 侧边栏：天气 + 运势 ==========
+# ========== 侧边栏 ==========
 with st.sidebar:
-    st.header("☁️ 天气")
-    
-    # 用户输入城市（支持全国任意城市）
-    selected_city = st.text_input("输入城市名称", value="南京", placeholder="例如：北京、上海、广州、成都")
-    st.caption("💡 支持全国所有城市，输入城市名即可")
+    st.header("☁️ 天気")
+    cities = list(CITY_CODES.keys())
+    selected_city = st.selectbox("城市 / 都市", cities, index=0)
     
     weather, error = get_weather(selected_city)
-    
     if weather:
-        st.metric("当前温度", f"{weather['temperature']}°C")
-        st.write(f"**天气**：{weather['weather']}")
-        st.write(f"**城市**：{weather['city']}")
-        if weather.get('humidity'):
-            st.write(f"**湿度**：{weather['humidity']}%")
-        st.caption("数据来源：高德地图")
+        st.metric("現在の気温", f"{weather['temperature']}°C")
+        st.write(f"**天気**：{weather['weather']}")
     else:
         st.error(error or "获取天气失败")
     
     st.divider()
     
-    st.header("📅 今日运势")
+    st.header("📅 今日の運勢")
     fortune = get_fortune()
-    st.metric("运势", fortune["level"])
-    st.write(f"**幸运色**：{fortune['color']}")
-    st.write(f"**开运建议**：{fortune['advice']}")
+    st.metric("運勢", fortune["level"])
+    st.write(f"**ラッキーカラー**：{fortune['color']}")
+    
+    st.divider()
+    
+    st.markdown("### 🧘 あなたのタイプ")
+    col_i, col_e, col_f = st.columns(3)
+    with col_i:
+        if st.button("I人", use_container_width=True):
+            st.session_state.personality = "I人"
+    with col_e:
+        if st.button("E人", use_container_width=True):
+            st.session_state.personality = "E人"
+    with col_f:
+        if st.button("F人", use_container_width=True):
+            st.session_state.personality = "F人"
+    st.caption(f"現在：{st.session_state.personality}")
+    
+    st.divider()
+    
+    st.markdown("### ✨ 今日の一言")
+    encourage = get_encourage(st.session_state.personality)
+    st.info(f"🇯🇵 {encourage['ja']}")
+    st.caption(f"🇨🇳 {encourage['zh']}")
 
-# ========== 主要内容区 ==========
+# ========== 主页面 ==========
+# 新闻模块（带了解更多）
+st.subheader("📰 今日の気候ニュース")
+
+news_data = load_today_news()
+news_title = news_data.get("one_sentence", "今日暂无重要气候新闻")
+news_summary = news_data.get("summary", "")
+news_url = news_data.get("url", "")
+news_source = news_data.get("source", "生态环境部")
+news_date = news_data.get("date", "")
+
+st.info(f"🌍 {news_title}")
+st.caption(f"来源：{news_source} · {news_date}")
+
+# 了解更多
+with st.expander("📖 もっと見る / 了解更多"):
+    if news_summary:
+        st.markdown("**📝 詳細 / 详情**")
+        st.write(news_summary)
+    else:
+        st.info("详细内容待补充。正式版本将接入AI大模型生成新闻摘要。")
+    
+    if news_url and news_url != "":
+        st.markdown(f"**🔗 原文 / 原文链接**：[{news_url}]({news_url})")
+
 st.divider()
 
-# 1. 今日气候关键词（带了解更多按钮）
-st.subheader("🌿 今日の気候キーワード")
+# 硬核词模块
+st.subheader("📖 今日のキーワード")
+
+KEYWORDS = [
+    {
+        "ja": "CBAM（炭素国境調整メカニズム）",
+        "zh": "CBAM（碳边境调节机制）",
+        "desc_ja": "EUが2026年から本格導入する制度。輸入品に製造時のCO2排出量に応じた炭素コストを課す。",
+        "desc_zh": "欧盟将于2026年全面实施的制度。对进口产品根据其生产过程中的CO2排放量征收碳成本。",
+        "detail_ja": "**詳細**：EUは2005年から排出量取引制度を運用。CBAMは無償割当の代替として導入される。",
+        "detail_zh": "**详解**：欧盟自2005年起运行碳交易体系。CBAM将替代免费配额。"
+    },
+    {
+        "ja": "カーボンリーケージ",
+        "zh": "碳泄漏",
+        "desc_ja": "排出規制の厳しい国から緩い国へ生産拠点が移転する現象。",
+        "desc_zh": "生产从排放管制严格的国家向宽松国家转移的现象。",
+        "detail_ja": "**詳細**：規制の厳しい国では生産コストが上昇するため。",
+        "detail_zh": "**详解**：管制严格的国家生产成本上升。"
+    }
+]
+
+day_index = datetime.now().timetuple().tm_yday % len(KEYWORDS)
+today_keyword = KEYWORDS[day_index]
+
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("**🇯🇵 日本語**")
-    st.info(f"**{today['keyword_ja']}**\n\n{today['desc_ja']}")
+    st.info(f"**{today_keyword['ja']}**\n\n{today_keyword['desc_ja']}")
 with col2:
     st.markdown("**🇨🇳 中文**")
-    st.success(f"**{today['keyword_zh']}**\n\n{today['desc_zh']}")
-st.caption(f"📌 なぜ重要？ {today['why_ja']}")
-st.caption(f"📌 为什么重要？ {today['why_zh']}")
+    st.success(f"**{today_keyword['zh']}**\n\n{today_keyword['desc_zh']}")
 
-# 了解更多按钮（关键词详情）
-with st.expander(f"📖 了解更多 — {today['keyword_zh']}"):
+with st.expander("📖 もっと見る / 了解更多"):
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("**🇯🇵 詳細解説**")
-        st.info(today.get('detail_ja', '详细内容待补充。正式版本将接入AI大模型实时生成详情。'))
+        st.info(today_keyword.get('detail_ja', '详细内容待补充'))
     with col2:
         st.markdown("**🇨🇳 详细解读**")
-        st.success(today.get('detail_zh', '详细内容待补充。正式版本将接入AI大模型实时生成详情。'))
+        st.success(today_keyword.get('detail_zh', '详细内容待补充'))
 
-# 2. 今日国际聚焦（带了解更多按钮）
 st.divider()
-st.subheader("🌐 今日の国際トピック")
-col1, col2 = st.columns(2)
-with col1:
-    st.markdown(f"**🇯🇵 日本語**\n\n{today['topic_ja']}")
-with col2:
-    st.markdown(f"**🇨🇳 中文**\n\n{today['topic_zh']}")
 
-# 了解更多按钮（国际聚焦详情）
-with st.expander(f"📖 了解更多 — {today['keyword_zh']} の国際的影響"):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("**🇯🇵 背景解説**")
-        st.info(today.get('detail_ja', '详细内容待补充。正式版本将接入AI大模型实时生成详情。'))
-    with col2:
-        st.markdown("**🇨🇳 背景解读**")
-        st.success(today.get('detail_zh', '详细内容待补充。正式版本将接入AI大模型实时生成详情。'))
+# 打卡和分享
+col_left, col_right = st.columns(2)
 
-# 3. 今日一句
-st.divider()
-st.subheader("📖 今日の一句")
-st.info(f"**「{today['quote_ja']}」**\n\n—— {today['quote_author']}")
-st.caption(f"“{today['quote_zh']}”")
+with col_left:
+    st.subheader("📅 学習記録")
+    checkin_data = checkin()
+    st.metric("🔥 連続", f"{checkin_data['continuous']} 日")
+    st.caption(f"📊 累計 {checkin_data['total']} 日")
+    if checkin_data.get("last_date") == datetime.now().strftime("%Y-%m-%d"):
+        st.success("✅ 今日はもうチェックインしました / 今日已打卡")
 
-# ========== 页脚 ==========
+with col_right:
+    st.subheader("📤 シェア")
+    st.caption("今日のカードを生成してシェアしよう")
+    st.caption("生成学习卡片，分享给朋友")
+    
+    if st.button("✨ 生成今日卡片", use_container_width=True):
+        st.info("卡片生成功能开发中，正式版本将支持分享朋友圈")
+
 st.divider()
 st.caption("💡 每日更新 · 日汉双语 · 气候变化下的国际政治科普")
-st.caption(f"📅 今日は第{content_index + 1}日 / 全{len(DAILY_CONTENT)}日")
-st.caption("💡 每天自动更新内容，打开即用，无需输入任何问题。")
