@@ -120,8 +120,8 @@ def get_priority(title):
     
     return 0
 
-def filter_news_top4(news_list):
-    """筛选新闻：优先显示符合条件的（priority>=40），总数固定4条"""
+def filter_news_top3(news_list):
+    """筛选新闻：优先显示符合条件的（priority>=40），总数固定3条"""
     if not news_list:
         return []
     
@@ -138,14 +138,14 @@ def filter_news_top4(news_list):
     result = []
     
     if matched:
-        result.extend(matched[:4])
-        if len(result) < 4:
-            result.extend(others[:4 - len(result)])
+        result.extend(matched[:3])
+        if len(result) < 3:
+            result.extend(others[:3 - len(result)])
     else:
-        # 没有符合条件的，直接取前4条
-        result = others[:4]
+        # 没有符合条件的，直接取前3条
+        result = others[:3]
     
-    return result[:4]
+    return result[:3]
 
 # ========== 加载缓存（前几天的新闻）==========
 def load_cached_news():
@@ -166,12 +166,12 @@ def main():
     china_news_raw = fetch_china_news()
     
     if china_news_raw:
-        china_news = filter_news_top4(china_news_raw)
+        china_news = filter_news_top3(china_news_raw)
         print(f"国内新闻（当天）: {len(china_news_raw)} 条总，筛选后 {len(china_news)} 条")
     else:
         cached_china, _ = load_cached_news()
         if cached_china:
-            china_news = cached_china[:4]
+            china_news = cached_china[:3]
             print(f"国内新闻（使用缓存，前{len(china_news)}条）")
         else:
             china_news = []
@@ -184,12 +184,12 @@ def main():
     world_news_raw = fetch_world_news()
     
     if world_news_raw:
-        world_news = filter_news_top4(world_news_raw)
+        world_news = filter_news_top3(world_news_raw)
         print(f"国际新闻（当天）: {len(world_news_raw)} 条总，筛选后 {len(world_news)} 条")
     else:
         _, cached_world = load_cached_news()
         if cached_world:
-            world_news = cached_world[:4]
+            world_news = cached_world[:3]
             print(f"国际新闻（使用缓存，前{len(world_news)}条）")
         else:
             world_news = []
