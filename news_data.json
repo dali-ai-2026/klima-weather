@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-07 14:36:44",
+  "date": "2026-06-08 00:30:43",
   "china_news": [
     {
       "title": "强降雨南压，今夜至明天贵州广西广东局地特大暴雨，高考出行需警惕",
@@ -21,41 +21,27 @@
       "date": "2026-06-07",
       "source": "中国天气网",
       "priority": 10
-    },
-    {
-      "title": "地质灾害预警：广西贵州等地局部发生地质灾害气象风险高",
-      "url": "http://news.weather.com.cn/2026/06/4667039.shtml",
-      "date": "2026-06-07",
-      "source": "中国天气网",
-      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Nairobi City Marathon ends with strong showcase of emerging talent",
-      "url": "https://english.news.cn/20260607/b64363fd3caf413a8eae3d787be1f05e/c.html",
-      "date": "2026-06-07 22:28:15",
+      "title": "Urgent: Iranian parliament speaker vows to halt negotiation process, engage in direct confrontation if Israeli attacks on Lebanon continue",
+      "url": "https://english.news.cn/20260608/4b3d46d16f2a4bf6a027164a2e877ff8/c.html",
+      "date": "2026-06-08 00:22:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Iran's IRGC says kills 4 \"terrorists\" in SE border province",
-      "url": "https://english.news.cn/20260607/75adf628e82443dfbab57852dec9fe75/c.html",
-      "date": "2026-06-07 22:29:30",
+      "title": "Finnish ruling party backs constitutional protection for abortion rights",
+      "url": "https://english.news.cn/20260608/f1360079842440b186aff110c07f6f36/c.html",
+      "date": "2026-06-08 00:19:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Pakistan submits message for Iran's supreme leader to Iranian FM",
-      "url": "https://english.news.cn/20260607/8ab9b8a3742b4c489013603b16a2e6ba/c.html",
-      "date": "2026-06-07 22:26:15",
-      "source": "新华网英文",
-      "priority": 0
-    },
-    {
-      "title": "Update: 2 killed, 11 injured in Israeli airstrike on Beirut's southern suburbs",
-      "url": "https://english.news.cn/20260607/a0bf1cbf27d74c1291e566e9d9717ee6/c.html",
-      "date": "2026-06-07 22:25:45",
+      "title": "Flash: Iranian Parliament Speaker Ghalibaf says to halt negotiation process, engage in direct confrontation if Israeli attacks on Lebanon continue",
+      "url": "https://english.news.cn/20260608/5edfa4fa657b4834bd3b7bdaed5a3ff8/c.html",
+      "date": "2026-06-08 00:10:30",
       "source": "新华网英文",
       "priority": 0
     }
