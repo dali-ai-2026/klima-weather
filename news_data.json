@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-07 22:03:18",
+  "date": "2026-06-07 14:23:57",
   "china_news": [
     {
       "title": "强降雨南压，今夜至明天贵州广西广东局地特大暴雨，高考出行需警惕",
@@ -32,6 +32,20 @@
   ],
   "world_news": [
     {
+      "title": "Interview: Cambodia, China share robust partnership in marine ecological protection, sustainable ocean management: minister",
+      "url": "https://english.news.cn/20260607/824086dd4d6444e8b2be3071ebff0d3a/c.html",
+      "date": "2026-06-07 22:17:00",
+      "source": "新华网英文",
+      "priority": 0
+    },
+    {
+      "title": "Israeli forces kill seven-month-old Palestinian infant in West Bank: health ministry",
+      "url": "https://english.news.cn/20260607/8594398d345b4dc0b547c189fa47da1d/c.html",
+      "date": "2026-06-07 22:03:31",
+      "source": "新华网英文",
+      "priority": 0
+    },
+    {
       "title": "HKSAR, Central Asian countries expand cooperation in economy, trade",
       "url": "https://english.news.cn/20260607/b58f074eeda4475586b594685d455f73/c.html",
       "date": "2026-06-07 21:58:30",
@@ -42,20 +56,6 @@
       "title": "Economic Watch: Central, Eastern Europe emerges as potential new growth momentum for Europe",
       "url": "https://english.news.cn/20260607/ffdf998327c444cd966f0f5adb22e893/c.html",
       "date": "2026-06-07 21:58:15",
-      "source": "新华网英文",
-      "priority": 0
-    },
-    {
-      "title": "China issues red alert for mountain torrents in three provincial-level regions",
-      "url": "https://english.news.cn/20260607/808c1908ec734abfb0bad3d4965b5cf9/c.html",
-      "date": "2026-06-07 21:49:00",
-      "source": "新华网英文",
-      "priority": 0
-    },
-    {
-      "title": "Jizhou District in China's Hebei promotes development of medical device industry",
-      "url": "https://english.news.cn/20260607/1626501710754947b2401481ee349461/c.html",
-      "date": "2026-06-07 21:50:11",
       "source": "新华网英文",
       "priority": 0
     }
