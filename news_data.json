@@ -1,0 +1,63 @@
+﻿{
+  "date": "2026-06-07 22:03:18",
+  "china_news": [
+    {
+      "title": "强降雨南压，今夜至明天贵州广西广东局地特大暴雨，高考出行需警惕",
+      "url": "http://news.weather.com.cn/2026/06/4667056.shtml",
+      "date": "2026-06-07",
+      "source": "中国天气网",
+      "priority": 40
+    },
+    {
+      "title": "暴雨橙色预警：贵州广西广东等局地有特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4667055.shtml",
+      "date": "2026-06-07",
+      "source": "中国天气网",
+      "priority": 10
+    },
+    {
+      "title": "山洪灾害气象预警：湖南广西贵州局地发生山洪灾害可能性很大",
+      "url": "http://news.weather.com.cn/2026/06/4667054.shtml",
+      "date": "2026-06-07",
+      "source": "中国天气网",
+      "priority": 10
+    },
+    {
+      "title": "地质灾害预警：广西贵州等地局部发生地质灾害气象风险高",
+      "url": "http://news.weather.com.cn/2026/06/4667039.shtml",
+      "date": "2026-06-07",
+      "source": "中国天气网",
+      "priority": 10
+    }
+  ],
+  "world_news": [
+    {
+      "title": "HKSAR, Central Asian countries expand cooperation in economy, trade",
+      "url": "https://english.news.cn/20260607/b58f074eeda4475586b594685d455f73/c.html",
+      "date": "2026-06-07 21:58:30",
+      "source": "新华网英文",
+      "priority": 0
+    },
+    {
+      "title": "Economic Watch: Central, Eastern Europe emerges as potential new growth momentum for Europe",
+      "url": "https://english.news.cn/20260607/ffdf998327c444cd966f0f5adb22e893/c.html",
+      "date": "2026-06-07 21:58:15",
+      "source": "新华网英文",
+      "priority": 0
+    },
+    {
+      "title": "China issues red alert for mountain torrents in three provincial-level regions",
+      "url": "https://english.news.cn/20260607/808c1908ec734abfb0bad3d4965b5cf9/c.html",
+      "date": "2026-06-07 21:49:00",
+      "source": "新华网英文",
+      "priority": 0
+    },
+    {
+      "title": "Jizhou District in China's Hebei promotes development of medical device industry",
+      "url": "https://english.news.cn/20260607/1626501710754947b2401481ee349461/c.html",
+      "date": "2026-06-07 21:50:11",
+      "source": "新华网英文",
+      "priority": 0
+    }
+  ]
+}
