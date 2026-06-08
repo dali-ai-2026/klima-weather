@@ -1,23 +1,23 @@
 ﻿{
-  "date": "2026-06-08 02:48:02",
+  "date": "2026-06-08 11:11:51",
   "china_news": [
     {
-      "title": "强对流蓝色预警：华北东北华南等地部分地区有8级以上雷暴大风",
-      "url": "http://news.weather.com.cn/2026/06/4667497.shtml",
+      "title": "芒种尝鲜橙 秭归夏橙如约而至",
+      "url": "http://www.weather.com.cn/video/2026/06/4668204.shtml",
       "date": "2026-06-08",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 80
     },
     {
-      "title": "暴雨黄色预警：4省区部分地区有大暴雨 广东台湾等局地特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4667442.shtml",
+      "title": "暑热即将回归！明后两天河南晴朗升温 11日起高温天气再度上线",
+      "url": "http://news.weather.com.cn/2026/06/4668260.shtml",
       "date": "2026-06-08",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     },
     {
-      "title": "赶考趁早！高考第二日广西大部雨势较强 局地或现大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4667343.shtml",
+      "title": "强对流天气蓝色预警：河北山东等部分地区将有10级以上雷暴大风",
+      "url": "http://news.weather.com.cn/2026/06/4668367.shtml",
       "date": "2026-06-08",
       "source": "中国天气网",
       "priority": 10
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "Market exchange rates in China -- June 8",
-      "url": "https://english.news.cn/20260608/cd07e9a4f5ea47ecaffce0bc89cf7b79/c.html",
-      "date": "2026-06-08 10:45:00",
+      "title": "Finnish court sentences two in country's largest human trafficking case",
+      "url": "https://english.news.cn/20260608/5c4366b77dcc4a46965b39c0dbc3a68f/c.html",
+      "date": "2026-06-08 18:58:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Chinese yuan weakens to 6.8198 against USD Monday",
-      "url": "https://english.news.cn/20260608/c8116605ab7d41c5ad49d625c333d896/c.html",
-      "date": "2026-06-08 10:44:15",
+      "title": "Afghan police discover illegal drugs, smash drug processing labs",
+      "url": "https://english.news.cn/20260608/c023f9b749dc466fa922590e647384a0/c.html",
+      "date": "2026-06-08 18:58:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Antonelli takes F1 Monaco GP win after late restart drama",
-      "url": "https://english.news.cn/20260608/747915b313eb43c48a9208d11881798e/c.html",
-      "date": "2026-06-08 10:33:45",
+      "title": "Qatar PM discusses mediation efforts with Iranian, Saudi foreign ministers",
+      "url": "https://english.news.cn/20260608/b53a50a1425342ec97ce428901d88b7d/c.html",
+      "date": "2026-06-08 18:53:15",
       "source": "新华网英文",
       "priority": 0
     }
