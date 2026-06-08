@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-08 00:30:43",
+  "date": "2026-06-08 02:48:02",
   "china_news": [
     {
-      "title": "强降雨南压，今夜至明天贵州广西广东局地特大暴雨，高考出行需警惕",
-      "url": "http://news.weather.com.cn/2026/06/4667056.shtml",
-      "date": "2026-06-07",
-      "source": "中国天气网",
-      "priority": 40
-    },
-    {
-      "title": "暴雨橙色预警：贵州广西广东等局地有特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4667055.shtml",
-      "date": "2026-06-07",
+      "title": "强对流蓝色预警：华北东北华南等地部分地区有8级以上雷暴大风",
+      "url": "http://news.weather.com.cn/2026/06/4667497.shtml",
+      "date": "2026-06-08",
       "source": "中国天气网",
       "priority": 10
     },
     {
-      "title": "山洪灾害气象预警：湖南广西贵州局地发生山洪灾害可能性很大",
-      "url": "http://news.weather.com.cn/2026/06/4667054.shtml",
-      "date": "2026-06-07",
+      "title": "暴雨黄色预警：4省区部分地区有大暴雨 广东台湾等局地特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4667442.shtml",
+      "date": "2026-06-08",
+      "source": "中国天气网",
+      "priority": 10
+    },
+    {
+      "title": "赶考趁早！高考第二日广西大部雨势较强 局地或现大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4667343.shtml",
+      "date": "2026-06-08",
       "source": "中国天气网",
       "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Urgent: Iranian parliament speaker vows to halt negotiation process, engage in direct confrontation if Israeli attacks on Lebanon continue",
-      "url": "https://english.news.cn/20260608/4b3d46d16f2a4bf6a027164a2e877ff8/c.html",
-      "date": "2026-06-08 00:22:15",
+      "title": "Market exchange rates in China -- June 8",
+      "url": "https://english.news.cn/20260608/cd07e9a4f5ea47ecaffce0bc89cf7b79/c.html",
+      "date": "2026-06-08 10:45:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Finnish ruling party backs constitutional protection for abortion rights",
-      "url": "https://english.news.cn/20260608/f1360079842440b186aff110c07f6f36/c.html",
-      "date": "2026-06-08 00:19:15",
+      "title": "Chinese yuan weakens to 6.8198 against USD Monday",
+      "url": "https://english.news.cn/20260608/c8116605ab7d41c5ad49d625c333d896/c.html",
+      "date": "2026-06-08 10:44:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Flash: Iranian Parliament Speaker Ghalibaf says to halt negotiation process, engage in direct confrontation if Israeli attacks on Lebanon continue",
-      "url": "https://english.news.cn/20260608/5edfa4fa657b4834bd3b7bdaed5a3ff8/c.html",
-      "date": "2026-06-08 00:10:30",
+      "title": "Antonelli takes F1 Monaco GP win after late restart drama",
+      "url": "https://english.news.cn/20260608/747915b313eb43c48a9208d11881798e/c.html",
+      "date": "2026-06-08 10:33:45",
       "source": "新华网英文",
       "priority": 0
     }
