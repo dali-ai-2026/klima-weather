@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-09 02:15:08",
+  "date": "2026-06-09 09:58:36",
   "china_news": [
     {
-      "title": "今明天南方强降雨明显缩减 后天起炎热发展北方多地或现高温",
-      "url": "http://news.weather.com.cn/2026/06/4668182.shtml",
+      "title": "南海夏季风爆发！我国将全面进入主汛期 揭秘南海夏季风是什么风",
+      "url": "http://news.weather.com.cn/2026/05/4632374.shtml",
+      "date": "2026-06-09",
+      "source": "中国天气网",
+      "priority": 60
+    },
+    {
+      "title": "热力升级！未来三天河南多地迎高温天气 郑州最高气温或升至36℃",
+      "url": "http://news.weather.com.cn/2026/06/4669651.shtml",
       "date": "2026-06-09",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "中央气象台6月9日06时继续发布强对流天气蓝色预警",
-      "url": "http://www.weather.com.cn/video/2026/06/4668564.shtml",
+      "title": "未来三天江苏暑热天气发展 12日南京或现今年首个高温日",
+      "url": "http://news.weather.com.cn/2026/06/4669507.shtml",
       "date": "2026-06-09",
       "source": "中国天气网",
-      "priority": 10
-    },
-    {
-      "title": "中央气象台6月9日06时发布暴雨蓝色预警",
-      "url": "http://www.weather.com.cn/video/2026/06/4668559.shtml",
-      "date": "2026-06-09",
-      "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Xi extends congratulations to new governor general of Canada",
-      "url": "https://english.news.cn/20260609/7ddcc4dd22d9493db59757e900daa5a3/c.html",
-      "date": "2026-06-09 10:11:45",
+      "title": "China's Zhuque-2E Y6 carrier rocket sends 2 new satellites into space",
+      "url": "https://english.news.cn/20260609/9e32edbd6ad94d4e8d6a42441cf14d1b/c.html",
+      "date": "2026-06-09 17:50:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Hong Kong's Hang Seng Index opens 0.43 pct lower",
-      "url": "https://english.news.cn/20260609/157139197b294ef8aa58d05e7cd3d634/c.html",
-      "date": "2026-06-09 09:56:00",
+      "title": "Japan, Philippines slammed for delimitation talks concerning waters east of China's Taiwan Island",
+      "url": "https://english.news.cn/20260609/38ca96d3a7b1401ab87d395f4d29a4a4/c.html",
+      "date": "2026-06-09 17:44:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Xinhua photos of the day",
-      "url": "https://english.news.cn/20260609/25644ae63cf2451f94615b3ca214f821/c.html",
-      "date": "2026-06-09 10:00:15",
+      "title": "Xi says he reaches important consensus with Kim on developing China-DPRK relations in new era",
+      "url": "https://english.news.cn/20260609/a7c18d6a64d646749877f8571993ee4d/c.html",
+      "date": "2026-06-09 17:40:15",
       "source": "新华网英文",
       "priority": 0
     }
