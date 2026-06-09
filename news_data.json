@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-08 15:48:01",
+  "date": "2026-06-09 02:15:08",
   "china_news": [
     {
-      "title": "芒种尝鲜橙 秭归夏橙如约而至",
-      "url": "http://www.weather.com.cn/video/2026/06/4668204.shtml",
-      "date": "2026-06-08",
-      "source": "中国天气网",
-      "priority": 80
-    },
-    {
-      "title": "暑热即将回归！明后两天河南晴朗升温 11日起高温天气再度上线",
-      "url": "http://news.weather.com.cn/2026/06/4668260.shtml",
-      "date": "2026-06-08",
+      "title": "今明天南方强降雨明显缩减 后天起炎热发展北方多地或现高温",
+      "url": "http://news.weather.com.cn/2026/06/4668182.shtml",
+      "date": "2026-06-09",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "强对流天气蓝色预警：河北山东等部分地区将有10级以上雷暴大风",
-      "url": "http://news.weather.com.cn/2026/06/4668367.shtml",
-      "date": "2026-06-08",
+      "title": "中央气象台6月9日06时继续发布强对流天气蓝色预警",
+      "url": "http://www.weather.com.cn/video/2026/06/4668564.shtml",
+      "date": "2026-06-09",
+      "source": "中国天气网",
+      "priority": 10
+    },
+    {
+      "title": "中央气象台6月9日06时发布暴雨蓝色预警",
+      "url": "http://www.weather.com.cn/video/2026/06/4668559.shtml",
+      "date": "2026-06-09",
       "source": "中国天气网",
       "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Iran suspends all flights nationwide until further notice",
-      "url": "https://english.news.cn/20260608/21ed929d1a834302bf894b327182f078/c.html",
-      "date": "2026-06-08 23:38:45",
+      "title": "Xi extends congratulations to new governor general of Canada",
+      "url": "https://english.news.cn/20260609/7ddcc4dd22d9493db59757e900daa5a3/c.html",
+      "date": "2026-06-09 10:11:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Tanker blaze reported off Oman, no environmental impact reported: UKMTO",
-      "url": "https://english.news.cn/20260608/99f82065710846c88b1507becefc5560/c.html",
-      "date": "2026-06-08 23:34:00",
+      "title": "Hong Kong's Hang Seng Index opens 0.43 pct lower",
+      "url": "https://english.news.cn/20260609/157139197b294ef8aa58d05e7cd3d634/c.html",
+      "date": "2026-06-09 09:56:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Xinhua Headlines: China starts mega waterway project on world's third-longest river",
-      "url": "https://english.news.cn/20260608/92d3a77ca9cc43db8761b2ff8f42e602/c.html",
-      "date": "2026-06-08 23:21:17",
+      "title": "Xinhua photos of the day",
+      "url": "https://english.news.cn/20260609/25644ae63cf2451f94615b3ca214f821/c.html",
+      "date": "2026-06-09 10:00:15",
       "source": "新华网英文",
       "priority": 0
     }
