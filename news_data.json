@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-10 02:38:28",
+  "date": "2026-06-10 10:16:15",
   "china_news": [
     {
-      "title": "大暴雨！今明天云南东部南部强降雨不断 后天降雨将有所缩减",
-      "url": "http://news.weather.com.cn/2026/06/4670038.shtml",
+      "title": "芒种好物镇宁蜂糖李——千万别被它骗啦！",
+      "url": "http://www.weather.com.cn/video/2026/06/4670613.shtml",
       "date": "2026-06-10",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 80
     },
     {
-      "title": "未来三天黑龙江阵雨或雷阵雨天气频繁 大部地区持续升温",
-      "url": "http://news.weather.com.cn/2026/06/4669946.shtml",
+      "title": "南方或将形成跨越千里的暴雨带 以河南为中心的干热型高温登场",
+      "url": "http://news.weather.com.cn/2026/06/4670926.shtml",
       "date": "2026-06-10",
       "source": "中国天气网",
-      "priority": 0
+      "priority": 40
     },
     {
-      "title": "6月10日全国航空天气预报",
-      "url": "http://www.weather.com.cn/video/2026/06/4669892.shtml",
+      "title": "未来三天河南暑热升级 郑州等地将现35℃以上高温天气",
+      "url": "http://news.weather.com.cn/2026/06/4670586.shtml",
       "date": "2026-06-10",
       "source": "中国天气网",
-      "priority": 0
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Vancouver makes final preparations to welcome global fans for 2026 FIFA World Cup",
-      "url": "https://english.news.cn/20260610/180c7a7d7000403d873eb1ede4dbea87/c.html",
-      "date": "2026-06-10 10:25:00",
+      "title": "Xinhua News | China calls for calmness, restraint over Iran situation: spokesperson",
+      "url": "https://english.news.cn/20260610/5173d35e166242a5af6fb64c226b16f6/c.html",
+      "date": "2026-06-10 18:10:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Men's national football team of BiH attends training session ahead of World Cup",
-      "url": "https://english.news.cn/20260610/8b8088a166b547bc9041c2ed4a6e0004/c.html",
-      "date": "2026-06-10 10:22:21",
+      "title": "Over 85,000 return to Afghanistan from Iran, Pakistan in two weeks: UN",
+      "url": "https://english.news.cn/20260610/b897f30715fa40b8930e7e3669390f12/c.html",
+      "date": "2026-06-10 18:01:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Xinhua photos of the day",
-      "url": "https://english.news.cn/20260610/43aa35bac21d402fabdec80dbf8343a8/c.html",
-      "date": "2026-06-10 10:20:05",
+      "title": "Pakistan records 4.25 bln USD remittances in May",
+      "url": "https://english.news.cn/20260610/a3b20f740134408a833247a04375fc5b/c.html",
+      "date": "2026-06-10 17:39:46",
       "source": "新华网英文",
       "priority": 0
     }
