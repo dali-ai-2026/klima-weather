@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-11 02:48:14",
+  "date": "2026-06-11 10:50:57",
   "china_news": [
     {
-      "title": "法国本周将迎新一轮高温天气 部分地区面临干旱风险",
-      "url": "http://news.weather.com.cn/2026/06/4671203.shtml",
+      "title": "浙江阳光“余额”不足明夜起降雨发展 周六降温明显体感由热转凉",
+      "url": "http://news.weather.com.cn/2026/06/4672158.shtml",
       "date": "2026-06-11",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "中东部暑热升级河南等地高温频繁 南方明起迎新一轮强降雨过程",
-      "url": "http://news.weather.com.cn/2026/06/4670671.shtml",
+      "title": "江西明夜起开启多雨模式 局地或现大暴雨周六降温明显",
+      "url": "http://news.weather.com.cn/2026/06/4671999.shtml",
       "date": "2026-06-11",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "防范次生灾害！云南今明天降雨连连 怒江临沧等地局部或现暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4671294.shtml",
+      "title": "图给你看-西北 黄淮等地多晴热 新疆 河南高温频繁",
+      "url": "http://www.weather.com.cn/video/2026/06/4671749.shtml",
       "date": "2026-06-11",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Japan sees rising bear attacks, 27 injured or killed across 9 prefectures: media",
-      "url": "https://english.news.cn/20260611/152628f0d1af4cde815e89f55f870a8e/c.html",
-      "date": "2026-06-11 10:44:30",
+      "title": "Construction of check dams begins in Afghanistan's Ghazni province",
+      "url": "https://english.news.cn/20260611/4b49ca4ba43f4c7885e109b073edddf0/c.html",
+      "date": "2026-06-11 18:45:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "47 killed, 31 missing after strong quake in S. Philippines",
-      "url": "https://english.news.cn/20260611/83f5632c9d9d4fff849c68616593d00e/c.html",
-      "date": "2026-06-11 10:37:45",
+      "title": "5.3-million-year-old whale graveyard hotspot found in Indian Ocean",
+      "url": "https://english.news.cn/20260611/0b18bc8630f54e97a56e8c9e937daea8/c.html",
+      "date": "2026-06-11 18:41:31",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Xinhua News | Iran's main military command announces full closure of Hormuz Strait",
-      "url": "https://english.news.cn/20260611/f6355dd1386642b38c8516c5952eaee0/c.html",
-      "date": "2026-06-11 10:37:15",
+      "title": "Advanced technologies showcased at Zhongguancun Exhibition Center in Beijing",
+      "url": "https://english.news.cn/20260611/aac9460d19a749feaf0d1b991ce1757e/c.html",
+      "date": "2026-06-11 18:30:35",
       "source": "新华网英文",
       "priority": 0
     }
