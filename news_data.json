@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-10 15:30:41",
+  "date": "2026-06-11 02:48:14",
   "china_news": [
     {
-      "title": "芒种好物镇宁蜂糖李——千万别被它骗啦！",
-      "url": "http://www.weather.com.cn/video/2026/06/4670613.shtml",
-      "date": "2026-06-10",
-      "source": "中国天气网",
-      "priority": 80
-    },
-    {
-      "title": "南方或将形成跨越千里的暴雨带 以河南为中心的干热型高温登场",
-      "url": "http://news.weather.com.cn/2026/06/4670926.shtml",
-      "date": "2026-06-10",
+      "title": "法国本周将迎新一轮高温天气 部分地区面临干旱风险",
+      "url": "http://news.weather.com.cn/2026/06/4671203.shtml",
+      "date": "2026-06-11",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "未来三天河南暑热升级 郑州等地将现35℃以上高温天气",
-      "url": "http://news.weather.com.cn/2026/06/4670586.shtml",
-      "date": "2026-06-10",
+      "title": "中东部暑热升级河南等地高温频繁 南方明起迎新一轮强降雨过程",
+      "url": "http://news.weather.com.cn/2026/06/4670671.shtml",
+      "date": "2026-06-11",
       "source": "中国天气网",
       "priority": 40
+    },
+    {
+      "title": "防范次生灾害！云南今明天降雨连连 怒江临沧等地局部或现暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4671294.shtml",
+      "date": "2026-06-11",
+      "source": "中国天气网",
+      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Russian State Duma condemns U.S. blockade on Cuba",
-      "url": "https://english.news.cn/20260610/3672a091ab0f49e9b728553214bf806f/c.html",
-      "date": "2026-06-10 23:02:30",
+      "title": "Japan sees rising bear attacks, 27 injured or killed across 9 prefectures: media",
+      "url": "https://english.news.cn/20260611/152628f0d1af4cde815e89f55f870a8e/c.html",
+      "date": "2026-06-11 10:44:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "6 killed in traffic accident in W. Libya",
-      "url": "https://english.news.cn/20260610/af9651e44b7042789f33ac4b7ae1493a/c.html",
-      "date": "2026-06-10 23:02:00",
+      "title": "47 killed, 31 missing after strong quake in S. Philippines",
+      "url": "https://english.news.cn/20260611/83f5632c9d9d4fff849c68616593d00e/c.html",
+      "date": "2026-06-11 10:37:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Bulgaria plans to increase defense spending to 5 pct of GDP by 2035",
-      "url": "https://english.news.cn/20260610/3637d724ffb44d17ad48e8869cd5ad11/c.html",
-      "date": "2026-06-10 22:59:00",
+      "title": "Xinhua News | Iran's main military command announces full closure of Hormuz Strait",
+      "url": "https://english.news.cn/20260611/f6355dd1386642b38c8516c5952eaee0/c.html",
+      "date": "2026-06-11 10:37:15",
       "source": "新华网英文",
       "priority": 0
     }
