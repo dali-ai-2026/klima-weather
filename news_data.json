@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-11 15:57:44",
+  "date": "2026-06-12 02:44:49",
   "china_news": [
     {
-      "title": "浙江阳光“余额”不足明夜起降雨发展 周六降温明显体感由热转凉",
-      "url": "http://news.weather.com.cn/2026/06/4672158.shtml",
-      "date": "2026-06-11",
+      "title": "广西即将开启多雨模式 周末两天强降雨来袭局地或现特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4672689.shtml",
+      "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     },
     {
-      "title": "江西明夜起开启多雨模式 局地或现大暴雨周六降温明显",
-      "url": "http://news.weather.com.cn/2026/06/4671999.shtml",
-      "date": "2026-06-11",
+      "title": "6月12日全国航空天气预报",
+      "url": "http://www.weather.com.cn/video/2026/06/4672371.shtml",
+      "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 0
     },
     {
-      "title": "图给你看-西北 黄淮等地多晴热 新疆 河南高温频繁",
-      "url": "http://www.weather.com.cn/video/2026/06/4671749.shtml",
-      "date": "2026-06-11",
+      "title": "南方将进入强降雨集中期 华北东北等地多雷雨",
+      "url": "http://news.weather.com.cn/2026/06/4671908.shtml",
+      "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 0
     }
   ],
   "world_news": [
     {
-      "title": "China's zero-tariff policy creates new opportunities for African exports, investment: officials",
-      "url": "https://english.news.cn/20260611/11034b15c0f14f1093db384c27eaf4bc/c.html",
-      "date": "2026-06-11 23:48:15",
+      "title": "Sri Lankan president orders preparedness plans ahead of possible El Nino impact",
+      "url": "https://english.news.cn/20260612/ec8993cfe91b4050bbebbe53a7686564/c.html",
+      "date": "2026-06-12 10:37:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Namibia launches AIDA-AfCFTA country assessment report",
-      "url": "https://english.news.cn/20260611/5395d95d44d24da39aeedeec4f013f71/c.html",
-      "date": "2026-06-11 23:46:00",
+      "title": "FIFA World Cup group A match: South Korea vs. Czech Republic",
+      "url": "https://english.news.cn/20260612/35e9039bd8d5490d9ea841c22f4f55ef/c.html",
+      "date": "2026-06-12 10:42:49",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Roundup: Int'l day for dialogue among civilizations marked at UN organizations",
-      "url": "https://english.news.cn/20260611/19efa0f6322e4a0b825fc110330a40b4/c.html",
-      "date": "2026-06-11 23:43:30",
+      "title": "Fully fit US squad ready for difficult Paraguay test, says Pochettino",
+      "url": "https://english.news.cn/20260612/38edf459dbca4916b1a20c37b67dfec5/c.html",
+      "date": "2026-06-12 10:41:15",
       "source": "新华网英文",
       "priority": 0
     }
