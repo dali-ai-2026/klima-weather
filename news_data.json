@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-12 02:44:49",
+  "date": "2026-06-12 10:25:49",
   "china_news": [
     {
-      "title": "广西即将开启多雨模式 周末两天强降雨来袭局地或现特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4672689.shtml",
+      "title": "夏夜好眠！全国安睡指数地图出炉 看哪些地方需空调电扇降温",
+      "url": "http://news.weather.com.cn/2026/06/4672868.shtml",
       "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     },
     {
-      "title": "6月12日全国航空天气预报",
-      "url": "http://www.weather.com.cn/video/2026/06/4672371.shtml",
+      "title": "今夜到周末河北雷雨频繁中北部雨势较强 南部地区仍有高温",
+      "url": "http://news.weather.com.cn/2026/06/4673283.shtml",
       "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 0
+      "priority": 40
     },
     {
-      "title": "南方将进入强降雨集中期 华北东北等地多雷雨",
-      "url": "http://news.weather.com.cn/2026/06/4671908.shtml",
+      "title": "陕西雷雨大风橙色预警信号生效中 周末高温发展西安可达38℃",
+      "url": "http://news.weather.com.cn/2026/06/4673226.shtml",
       "date": "2026-06-12",
       "source": "中国天气网",
-      "priority": 0
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Sri Lankan president orders preparedness plans ahead of possible El Nino impact",
-      "url": "https://english.news.cn/20260612/ec8993cfe91b4050bbebbe53a7686564/c.html",
-      "date": "2026-06-12 10:37:30",
+      "title": "Fire prompts evacuation at Wellington Airport terminal",
+      "url": "https://english.news.cn/20260612/cc7c2a026c614fe89cd9b68cc5fc38e1/c.html",
+      "date": "2026-06-12 18:21:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "FIFA World Cup group A match: South Korea vs. Czech Republic",
-      "url": "https://english.news.cn/20260612/35e9039bd8d5490d9ea841c22f4f55ef/c.html",
-      "date": "2026-06-12 10:42:49",
+      "title": "Indonesia to build 100 integrated national schools this year",
+      "url": "https://english.news.cn/20260612/a8168cac14c742759c78e0fdd246e165/c.html",
+      "date": "2026-06-12 18:18:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Fully fit US squad ready for difficult Paraguay test, says Pochettino",
-      "url": "https://english.news.cn/20260612/38edf459dbca4916b1a20c37b67dfec5/c.html",
-      "date": "2026-06-12 10:41:15",
+      "title": "Urgent: Security area at Hamburg Airport evacuated amid \"police operation\"",
+      "url": "https://english.news.cn/20260612/665a87693d684425b193f71f145f3aa3/c.html",
+      "date": "2026-06-12 18:09:15",
       "source": "新华网英文",
       "priority": 0
     }
