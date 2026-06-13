@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-13 09:27:37",
+  "date": "2026-06-13 13:56:07",
   "china_news": [
     {
       "title": "新疆河南等地高温干热 华南闷热回归",
@@ -9,15 +9,15 @@
       "priority": 40
     },
     {
-      "title": "北京发布大风蓝色预警信号 门头沟房山等区局地有9级左右阵风",
-      "url": "http://news.weather.com.cn/2026/06/4674464.shtml",
+      "title": "暴雨带横跨千里，龙舟水猛泼，东北局地也要下暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4674555.shtml",
       "date": "2026-06-13",
       "source": "中国天气网",
       "priority": 10
     },
     {
-      "title": "​北京市雷电黄色预警信号",
-      "url": "http://www.weather.com.cn/video/2026/06/4674438.shtml",
+      "title": "强对流天气蓝色预警：华北华南等部分地区将有8级以上雷暴大风",
+      "url": "http://news.weather.com.cn/2026/06/4674558.shtml",
       "date": "2026-06-13",
       "source": "中国天气网",
       "priority": 10
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "Xi Story: A green vision that turns black waters into urban oasis",
-      "url": "https://english.news.cn/20260613/8fce9c8fcb4448c2bd982d9899afa0ef/c.html",
-      "date": "2026-06-13 17:15:45",
+      "title": "First aircraft dismantling project in southern China's Hainan FTP launches",
+      "url": "https://english.news.cn/20260613/7994d67f2cb3446ab88034aac499a86e/c.html",
+      "date": "2026-06-13 21:39:16",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "4 killed, 16 injured in rain-related incidents in NW Pakistan",
-      "url": "https://english.news.cn/20260613/ed4cbf8f3b7b48af99cc1fc1c2fb125b/c.html",
-      "date": "2026-06-13 17:11:15",
+      "title": "Palestinian VP, Egyptian FM discuss Gaza, West Bank developments over phone",
+      "url": "https://english.news.cn/20260613/370516fbfa0648eea9cc877c05a95e77/c.html",
+      "date": "2026-06-13 21:39:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Sri Lanka to resume construction of main airport terminal",
-      "url": "https://english.news.cn/20260613/79147c8c49964ad3bec6af2142497f25/c.html",
-      "date": "2026-06-13 16:55:15",
+      "title": "Parallel monetary institutions risk splitting Sudan's economy, observers warn",
+      "url": "https://english.news.cn/20260613/4e3f119d3f1c475d94bdcfc52f3f1841/c.html",
+      "date": "2026-06-13 21:37:00",
       "source": "新华网英文",
       "priority": 0
     }
