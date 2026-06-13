@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-12 14:54:58",
+  "date": "2026-06-13 02:37:02",
   "china_news": [
     {
-      "title": "夏夜好眠！全国安睡指数地图出炉 看哪些地方需空调电扇降温",
-      "url": "http://news.weather.com.cn/2026/06/4672868.shtml",
-      "date": "2026-06-12",
+      "title": "今起三天福建大范围降雨持续 局地有大暴雨伴强对流天气",
+      "url": "http://news.weather.com.cn/2026/06/4673925.shtml",
+      "date": "2026-06-13",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     },
     {
-      "title": "今夜到周末河北雷雨频繁中北部雨势较强 南部地区仍有高温",
-      "url": "http://news.weather.com.cn/2026/06/4673283.shtml",
-      "date": "2026-06-12",
+      "title": "强对流蓝色预警：华北江南华南等地部分地区有雷暴大风或冰雹天气",
+      "url": "http://news.weather.com.cn/2026/06/4673964.shtml",
+      "date": "2026-06-13",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     },
     {
-      "title": "陕西雷雨大风橙色预警信号生效中 周末高温发展西安可达38℃",
-      "url": "http://news.weather.com.cn/2026/06/4673226.shtml",
-      "date": "2026-06-12",
+      "title": "今天江西降雨增多增强 南昌上饶等地警惕暴雨致灾",
+      "url": "http://news.weather.com.cn/2026/06/4673813.shtml",
+      "date": "2026-06-13",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Beijing planning, constructing mountain reservoirs for flood control",
-      "url": "https://english.news.cn/20260612/4145e30da16846dabf32f571d57fdfad/c.html",
-      "date": "2026-06-12 22:40:15",
+      "title": "Flash: U.S. military says Iran launched multiple drones in an attempt to strike ships transiting Strait of Hormuz",
+      "url": "https://english.news.cn/20260613/2bd8f64311d44d1ebd5b26cafdacc0b4/c.html",
+      "date": "2026-06-13 09:40:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Teodoro's reckless behaviors undermine interests of Philippines, its people: Chinese spokesperson",
-      "url": "https://english.news.cn/20260612/dcf4e8df7df44b4c957bfe6a860876cf/c.html",
-      "date": "2026-06-12 22:38:45",
+      "title": "Urgent: Trump says U.S. military has killed leader of Tren De Aragua",
+      "url": "https://english.news.cn/20260613/2da03d922c5b48f38db91c0e64d11376/c.html",
+      "date": "2026-06-13 09:26:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Dutch central bank cuts 2026 growth forecast to 0.8 pct amid Mideast conflict",
-      "url": "https://english.news.cn/20260612/1991289709634dea9f9249e98d1e4630/c.html",
-      "date": "2026-06-12 22:34:45",
+      "title": "Flash: Trump says U.S. military launched a strike on leader of Tren De Aragua",
+      "url": "https://english.news.cn/20260613/b611e96ecd254bda86ced222b415aa9e/c.html",
+      "date": "2026-06-13 09:13:45",
       "source": "新华网英文",
       "priority": 0
     }
