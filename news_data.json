@@ -1,23 +1,23 @@
 ﻿{
-  "date": "2026-06-13 02:37:02",
+  "date": "2026-06-13 09:27:37",
   "china_news": [
     {
-      "title": "今起三天福建大范围降雨持续 局地有大暴雨伴强对流天气",
-      "url": "http://news.weather.com.cn/2026/06/4673925.shtml",
+      "title": "新疆河南等地高温干热 华南闷热回归",
+      "url": "http://www.weather.com.cn/video/2026/06/4674006.shtml",
+      "date": "2026-06-13",
+      "source": "中国天气网",
+      "priority": 40
+    },
+    {
+      "title": "北京发布大风蓝色预警信号 门头沟房山等区局地有9级左右阵风",
+      "url": "http://news.weather.com.cn/2026/06/4674464.shtml",
       "date": "2026-06-13",
       "source": "中国天气网",
       "priority": 10
     },
     {
-      "title": "强对流蓝色预警：华北江南华南等地部分地区有雷暴大风或冰雹天气",
-      "url": "http://news.weather.com.cn/2026/06/4673964.shtml",
-      "date": "2026-06-13",
-      "source": "中国天气网",
-      "priority": 10
-    },
-    {
-      "title": "今天江西降雨增多增强 南昌上饶等地警惕暴雨致灾",
-      "url": "http://news.weather.com.cn/2026/06/4673813.shtml",
+      "title": "​北京市雷电黄色预警信号",
+      "url": "http://www.weather.com.cn/video/2026/06/4674438.shtml",
       "date": "2026-06-13",
       "source": "中国天气网",
       "priority": 10
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "Flash: U.S. military says Iran launched multiple drones in an attempt to strike ships transiting Strait of Hormuz",
-      "url": "https://english.news.cn/20260613/2bd8f64311d44d1ebd5b26cafdacc0b4/c.html",
-      "date": "2026-06-13 09:40:15",
+      "title": "Xi Story: A green vision that turns black waters into urban oasis",
+      "url": "https://english.news.cn/20260613/8fce9c8fcb4448c2bd982d9899afa0ef/c.html",
+      "date": "2026-06-13 17:15:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Urgent: Trump says U.S. military has killed leader of Tren De Aragua",
-      "url": "https://english.news.cn/20260613/2da03d922c5b48f38db91c0e64d11376/c.html",
-      "date": "2026-06-13 09:26:45",
+      "title": "4 killed, 16 injured in rain-related incidents in NW Pakistan",
+      "url": "https://english.news.cn/20260613/ed4cbf8f3b7b48af99cc1fc1c2fb125b/c.html",
+      "date": "2026-06-13 17:11:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Flash: Trump says U.S. military launched a strike on leader of Tren De Aragua",
-      "url": "https://english.news.cn/20260613/b611e96ecd254bda86ced222b415aa9e/c.html",
-      "date": "2026-06-13 09:13:45",
+      "title": "Sri Lanka to resume construction of main airport terminal",
+      "url": "https://english.news.cn/20260613/79147c8c49964ad3bec6af2142497f25/c.html",
+      "date": "2026-06-13 16:55:15",
       "source": "新华网英文",
       "priority": 0
     }
