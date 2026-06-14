@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-13 13:56:07",
+  "date": "2026-06-14 02:49:09",
   "china_news": [
     {
-      "title": "新疆河南等地高温干热 华南闷热回归",
-      "url": "http://www.weather.com.cn/video/2026/06/4674006.shtml",
-      "date": "2026-06-13",
+      "title": "江南华南强降雨持续警惕暴雨致灾 河南陕西等地高温连连",
+      "url": "http://news.weather.com.cn/2026/06/4674241.shtml",
+      "date": "2026-06-14",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "暴雨带横跨千里，龙舟水猛泼，东北局地也要下暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4674555.shtml",
-      "date": "2026-06-13",
+      "title": "强对流预警：东北华南等地的部分地区将有8级以上雷暴大风或冰雹",
+      "url": "http://news.weather.com.cn/2026/06/4675190.shtml",
+      "date": "2026-06-14",
       "source": "中国天气网",
       "priority": 10
     },
     {
-      "title": "强对流天气蓝色预警：华北华南等部分地区将有8级以上雷暴大风",
-      "url": "http://news.weather.com.cn/2026/06/4674558.shtml",
-      "date": "2026-06-13",
+      "title": "暴雨成片！广西强降雨持续 南宁梧州贺州等局地有大暴雨或特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4674889.shtml",
+      "date": "2026-06-14",
       "source": "中国天气网",
       "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "First aircraft dismantling project in southern China's Hainan FTP launches",
-      "url": "https://english.news.cn/20260613/7994d67f2cb3446ab88034aac499a86e/c.html",
-      "date": "2026-06-13 21:39:16",
+      "title": "61 killed, over 1,400 injured after strong quake in S. Philippines",
+      "url": "https://english.news.cn/20260614/1d85013ef7b24b049d84f43dabb80270/c.html",
+      "date": "2026-06-14 10:41:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Palestinian VP, Egyptian FM discuss Gaza, West Bank developments over phone",
-      "url": "https://english.news.cn/20260613/370516fbfa0648eea9cc877c05a95e77/c.html",
-      "date": "2026-06-13 21:39:15",
+      "title": "Ebola cases in DR Congo rise to 710 as authorities deny lockdown rumors",
+      "url": "https://english.news.cn/20260614/96db9a19b8cd4e218c8f54f5e47e3b56/c.html",
+      "date": "2026-06-14 10:33:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Parallel monetary institutions risk splitting Sudan's economy, observers warn",
-      "url": "https://english.news.cn/20260613/4e3f119d3f1c475d94bdcfc52f3f1841/c.html",
-      "date": "2026-06-13 21:37:00",
+      "title": "2026 FIFA World Cup: Haiti vs. Scotland",
+      "url": "https://english.news.cn/20260614/b9dec2f2ff204787adbaca177c2526f8/c.html",
+      "date": "2026-06-14 10:37:34",
       "source": "新华网英文",
       "priority": 0
     }
