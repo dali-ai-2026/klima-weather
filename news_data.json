@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-14 09:49:14",
+  "date": "2026-06-14 13:59:02",
   "china_news": [
     {
       "title": "江南华南强降雨持续警惕暴雨致灾 河南陕西等地高温连连",
@@ -9,15 +9,15 @@
       "priority": 40
     },
     {
-      "title": "注意！广东未来三天将迎强降雨过程 汕尾珠三角局地有特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4675338.shtml",
+      "title": "大暴雨特大暴雨！主雨带将在华南滞留多天 下周江南迎降雨集中期",
+      "url": "http://news.weather.com.cn/2026/06/4675629.shtml",
       "date": "2026-06-14",
       "source": "中国天气网",
       "priority": 10
     },
     {
-      "title": "暴雨黄色预警：9省区有大到暴雨 广东沿海局地有特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4675250.shtml",
+      "title": "强对流预警！华北东北等地部分地区将有8级以上雷暴大风或冰雹",
+      "url": "http://news.weather.com.cn/2026/06/4675616.shtml",
       "date": "2026-06-14",
       "source": "中国天气网",
       "priority": 10
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "60 years on, Kinkon Hydropower Station testifies to enduring China-Guinea friendship",
-      "url": "https://english.news.cn/20260614/095669dbd6fc44c584753c388a8e1917/c.html",
-      "date": "2026-06-14 17:26:31",
+      "title": "Mongolia observes World Blood Donor Day",
+      "url": "https://english.news.cn/20260614/5ff73556f8d543029aa4ae46d90448a4/c.html",
+      "date": "2026-06-14 21:52:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Profile: President of Myanmar Min Aung Hlaing",
-      "url": "https://english.news.cn/20260614/d15f1fa3f5da4755a9264897829b76b9/c.html",
-      "date": "2026-06-14 17:27:45",
+      "title": "Flash: Palestinian death toll in Gaza war surpasses 73,000, Gaza health authorities say",
+      "url": "https://english.news.cn/20260614/56e4e0e276a04573966704226f509b7d/c.html",
+      "date": "2026-06-14 21:42:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Humanoid robots present creative opening dance at Tianjin Fashion Week",
-      "url": "https://english.news.cn/20260614/b428733427f548669fb16a7d31a971df/c.html",
-      "date": "2026-06-14 17:09:15",
+      "title": "Namibia urges support for Cuba amid US sanctions",
+      "url": "https://english.news.cn/20260614/fd242c983b99434f87616a1fda4c4ca3/c.html",
+      "date": "2026-06-14 21:40:15",
       "source": "新华网英文",
       "priority": 0
     }
