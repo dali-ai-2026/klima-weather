@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-14 13:59:02",
+  "date": "2026-06-15 02:53:43",
   "china_news": [
     {
-      "title": "江南华南强降雨持续警惕暴雨致灾 河南陕西等地高温连连",
-      "url": "http://news.weather.com.cn/2026/06/4674241.shtml",
-      "date": "2026-06-14",
+      "title": "西北到黄淮高温发展",
+      "url": "http://www.weather.com.cn/video/2026/06/4676029.shtml",
+      "date": "2026-06-15",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "大暴雨特大暴雨！主雨带将在华南滞留多天 下周江南迎降雨集中期",
-      "url": "http://news.weather.com.cn/2026/06/4675629.shtml",
-      "date": "2026-06-14",
+      "title": "华南龙舟水发威局地有特大暴雨 河南等地高温持续“待机”",
+      "url": "http://news.weather.com.cn/2026/06/4675553.shtml",
+      "date": "2026-06-15",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     },
     {
-      "title": "强对流预警！华北东北等地部分地区将有8级以上雷暴大风或冰雹",
-      "url": "http://news.weather.com.cn/2026/06/4675616.shtml",
-      "date": "2026-06-14",
+      "title": "强对流蓝色预警：京津冀等地部分地区有10级以上雷暴大风",
+      "url": "http://news.weather.com.cn/2026/06/4675957.shtml",
+      "date": "2026-06-15",
       "source": "中国天气网",
       "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Mongolia observes World Blood Donor Day",
-      "url": "https://english.news.cn/20260614/5ff73556f8d543029aa4ae46d90448a4/c.html",
-      "date": "2026-06-14 21:52:30",
+      "title": "In pics: paddy fields under starry sky in China's Heilongjiang",
+      "url": "https://english.news.cn/20260615/80eb7ca6cab0450bbb45b9c15144e96f/c.html",
+      "date": "2026-06-15 10:49:52",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Flash: Palestinian death toll in Gaza war surpasses 73,000, Gaza health authorities say",
-      "url": "https://english.news.cn/20260614/56e4e0e276a04573966704226f509b7d/c.html",
-      "date": "2026-06-14 21:42:00",
+      "title": "Britain, France, Germany, Italy welcome U.S.-Iran peace deal, ready to lift sanctions",
+      "url": "https://english.news.cn/20260615/93ae245a68894b0eacc0433b6266b486/c.html",
+      "date": "2026-06-15 10:29:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Namibia urges support for Cuba amid US sanctions",
-      "url": "https://english.news.cn/20260614/fd242c983b99434f87616a1fda4c4ca3/c.html",
-      "date": "2026-06-14 21:40:15",
+      "title": "Australian PM welcomes U.S.-Iran peace deal",
+      "url": "https://english.news.cn/20260615/60a073606d7f4b07b66efeb32225c78f/c.html",
+      "date": "2026-06-15 10:28:45",
       "source": "新华网英文",
       "priority": 0
     }
