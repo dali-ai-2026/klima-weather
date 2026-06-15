@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-15 02:53:43",
+  "date": "2026-06-15 12:34:07",
   "china_news": [
+    {
+      "title": "芒种好物 老天爷追着给它喂饭",
+      "url": "http://www.weather.com.cn/video/2026/06/4676268.shtml",
+      "date": "2026-06-15",
+      "source": "中国天气网",
+      "priority": 80
+    },
+    {
+      "title": "河南大部天气以晴晒为主 郑州等地本周或遭遇高温“四连击”",
+      "url": "http://news.weather.com.cn/2026/06/4676824.shtml",
+      "date": "2026-06-15",
+      "source": "中国天气网",
+      "priority": 40
+    },
     {
       "title": "西北到黄淮高温发展",
       "url": "http://www.weather.com.cn/video/2026/06/4676029.shtml",
       "date": "2026-06-15",
       "source": "中国天气网",
       "priority": 40
-    },
-    {
-      "title": "华南龙舟水发威局地有特大暴雨 河南等地高温持续“待机”",
-      "url": "http://news.weather.com.cn/2026/06/4675553.shtml",
-      "date": "2026-06-15",
-      "source": "中国天气网",
-      "priority": 40
-    },
-    {
-      "title": "强对流蓝色预警：京津冀等地部分地区有10级以上雷暴大风",
-      "url": "http://news.weather.com.cn/2026/06/4675957.shtml",
-      "date": "2026-06-15",
-      "source": "中国天气网",
-      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "In pics: paddy fields under starry sky in China's Heilongjiang",
-      "url": "https://english.news.cn/20260615/80eb7ca6cab0450bbb45b9c15144e96f/c.html",
-      "date": "2026-06-15 10:49:52",
+      "title": "Namibian president urges unity, peaceful dialogue to advance development",
+      "url": "https://english.news.cn/20260615/337b97a70fde4cc7a7b3b87ae7fe2896/c.html",
+      "date": "2026-06-15 20:21:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Britain, France, Germany, Italy welcome U.S.-Iran peace deal, ready to lift sanctions",
-      "url": "https://english.news.cn/20260615/93ae245a68894b0eacc0433b6266b486/c.html",
-      "date": "2026-06-15 10:29:30",
+      "title": "Economic Watch: Chinese firms reshape global industrial cooperation as overseas footprint grows",
+      "url": "https://english.news.cn/20260615/b716cafbf27d412d9a42a37be91c0e91/c.html",
+      "date": "2026-06-15 20:21:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Australian PM welcomes U.S.-Iran peace deal",
-      "url": "https://english.news.cn/20260615/60a073606d7f4b07b66efeb32225c78f/c.html",
-      "date": "2026-06-15 10:28:45",
+      "title": "Afghanistan collects 227,000 blood units in past year",
+      "url": "https://english.news.cn/20260615/55693748cb95465a85f43d293808d3a6/c.html",
+      "date": "2026-06-15 20:14:30",
       "source": "新华网英文",
       "priority": 0
     }
