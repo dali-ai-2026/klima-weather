@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-15 17:12:52",
+  "date": "2026-06-16 02:54:40",
   "china_news": [
     {
-      "title": "芒种好物 老天爷追着给它喂饭",
-      "url": "http://www.weather.com.cn/video/2026/06/4676268.shtml",
-      "date": "2026-06-15",
+      "title": "暴雨橙色预警：9省区市有大到暴雨 广东广西等局部有特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4677349.shtml",
+      "date": "2026-06-16",
       "source": "中国天气网",
-      "priority": 80
+      "priority": 10
     },
     {
-      "title": "河南大部天气以晴晒为主 郑州等地本周或遭遇高温“四连击”",
-      "url": "http://news.weather.com.cn/2026/06/4676824.shtml",
-      "date": "2026-06-15",
+      "title": "带伞！今明天江西降雨将发展增多 中部南部局地有大到暴雨来袭",
+      "url": "http://news.weather.com.cn/2026/06/4677311.shtml",
+      "date": "2026-06-16",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     },
     {
-      "title": "西北到黄淮高温发展",
-      "url": "http://www.weather.com.cn/video/2026/06/4676029.shtml",
-      "date": "2026-06-15",
+      "title": "强对流黄色预警：辽宁山西河北等地部分地区有10级以上雷暴大风",
+      "url": "http://news.weather.com.cn/2026/06/4677305.shtml",
+      "date": "2026-06-16",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Zheng Qinwen rallies past Sakkari for first grass-court win of season",
-      "url": "https://english.news.cn/20260615/8038b6266ede4aaebee0dbaddf1d51b0/c.html",
-      "date": "2026-06-15 23:21:30",
+      "title": "Ghanaian fans optimistic on opening World Cup match",
+      "url": "https://english.news.cn/20260616/5a788e7c9cd24a0ea2c9715dd3c4f718/c.html",
+      "date": "2026-06-16 10:42:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Roundup: Türkiye's farmers eye bumper harvest following heavy rains despite mounting cost pressures",
-      "url": "https://english.news.cn/20260615/addc5cdf1e594ba7bcebe461ec074a0b/c.html",
-      "date": "2026-06-15 23:20:45",
+      "title": "Chinese president holds talks with Myanmar counterpart",
+      "url": "https://english.news.cn/20260616/458c91a2fd244a7ca0e14174128e4eab/c.html",
+      "date": "2026-06-16 10:42:47",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Sacrificing environment for economic growth, official draws scrutiny as China pursues sound governance",
-      "url": "https://english.news.cn/20260615/4afe89f31bf54f8390adef2eb54ca8f5/c.html",
-      "date": "2026-06-15 23:17:45",
+      "title": "Xinhua News | Chinese government to release white paper on global governance",
+      "url": "https://english.news.cn/20260616/329fc149aeb34345b276ce616c9dabc6/c.html",
+      "date": "2026-06-16 10:35:15",
       "source": "新华网英文",
       "priority": 0
     }
