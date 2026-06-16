@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-16 11:26:54",
+  "date": "2026-06-16 16:48:22",
   "china_news": [
     {
       "title": "气温冲高30℃ 端午有雷雨",
@@ -9,15 +9,15 @@
       "priority": 80
     },
     {
-      "title": "防暑！未来五天北方多地暑热天气发展 新疆河南等地高温频繁",
-      "url": "http://news.weather.com.cn/2026/06/4677379.shtml",
+      "title": "今天傍晚北京出现降雨 多道路积水影响晚高峰出行",
+      "url": "http://p.weather.com.cn/2026/06/4678404.shtml",
       "date": "2026-06-16",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "新疆等地高温持续",
-      "url": "http://www.weather.com.cn/video/2026/06/4677431.shtml",
+      "title": "防暑！未来五天北方多地暑热天气发展 新疆河南等地高温频繁",
+      "url": "http://news.weather.com.cn/2026/06/4677379.shtml",
       "date": "2026-06-16",
       "source": "中国天气网",
       "priority": 40
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "President of Myanmar lays wreath at Monument to People's Heroes in Beijing",
-      "url": "https://english.news.cn/20260616/63c4daa9635341818b1641c5501298bf/c.html",
-      "date": "2026-06-16 19:17:28",
+      "title": "Trump says U.S. to reimpose sanctions on Russian oil",
+      "url": "https://english.news.cn/20260616/e2ff92519a304e3f81c4e411fac4fe55/c.html",
+      "date": "2026-06-16 23:19:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "5.5-magnitude earthquake hits eastern Japan near Tokyo",
-      "url": "https://english.news.cn/20260616/bf3bbe430c114f388f37f8b3a51572ec/c.html",
-      "date": "2026-06-16 19:11:15",
+      "title": "China activates Level-IV emergency response following Qinghai earthquake",
+      "url": "https://english.news.cn/20260616/cf4e0e3fc679483c93a8118753bd26cd/c.html",
+      "date": "2026-06-16 23:16:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Researchers chart distinct evolutionary paths of super-Earths and mini-Neptunes",
-      "url": "https://english.news.cn/20260616/3ea212b17b034d378894286042765758/c.html",
-      "date": "2026-06-16 19:08:32",
+      "title": "Projects worth 27.7 bln yuan inked at China-South Asia Expo",
+      "url": "https://english.news.cn/20260616/280718a3a52f4e19bc2e838c48c36ff6/c.html",
+      "date": "2026-06-16 23:13:45",
       "source": "新华网英文",
       "priority": 0
     }
