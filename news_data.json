@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-16 16:48:22",
+  "date": "2026-06-17 02:51:44",
   "china_news": [
     {
-      "title": "气温冲高30℃ 端午有雷雨",
-      "url": "http://www.weather.com.cn/video/2026/06/4678300.shtml",
-      "date": "2026-06-16",
+      "title": "今天北京将以多云为主气温回升 端午节当天将再现较明显雷雨",
+      "url": "http://news.weather.com.cn/2026/06/4678353.shtml",
+      "date": "2026-06-17",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "今天傍晚北京出现降雨 多道路积水影响晚高峰出行",
-      "url": "http://p.weather.com.cn/2026/06/4678404.shtml",
-      "date": "2026-06-16",
+      "title": "今天华南仍有强降雨明起主雨带北抬 新疆河南等地高温频繁",
+      "url": "http://news.weather.com.cn/2026/06/4677911.shtml",
+      "date": "2026-06-17",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "防暑！未来五天北方多地暑热天气发展 新疆河南等地高温频繁",
-      "url": "http://news.weather.com.cn/2026/06/4677379.shtml",
-      "date": "2026-06-16",
+      "title": "暴雨橙色预警！广东广西重庆等地部分地区有大暴雨 局地特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4678737.shtml",
+      "date": "2026-06-17",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Trump says U.S. to reimpose sanctions on Russian oil",
-      "url": "https://english.news.cn/20260616/e2ff92519a304e3f81c4e411fac4fe55/c.html",
-      "date": "2026-06-16 23:19:30",
+      "title": "Australian gov't announces record funding for elite athletes",
+      "url": "https://english.news.cn/20260617/eb3c8fa49e294c91a79f66d84b1ecd06/c.html",
+      "date": "2026-06-17 10:45:15",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "China activates Level-IV emergency response following Qinghai earthquake",
-      "url": "https://english.news.cn/20260616/cf4e0e3fc679483c93a8118753bd26cd/c.html",
-      "date": "2026-06-16 23:16:00",
+      "title": "Xinhua News | China releases white paper on global governance",
+      "url": "https://english.news.cn/20260617/39f76c9f94094c628b041095ff002446/c.html",
+      "date": "2026-06-17 10:41:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Projects worth 27.7 bln yuan inked at China-South Asia Expo",
-      "url": "https://english.news.cn/20260616/280718a3a52f4e19bc2e838c48c36ff6/c.html",
-      "date": "2026-06-16 23:13:45",
+      "title": "China accelerates establishment of World AI Cooperation Organization",
+      "url": "https://english.news.cn/20260617/e59de7a2162c4ec5bec90c1067105c69/c.html",
+      "date": "2026-06-17 10:38:45",
       "source": "新华网英文",
       "priority": 0
     }
