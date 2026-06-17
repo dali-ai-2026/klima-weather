@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-17 02:51:44",
+  "date": "2026-06-17 11:10:50",
   "china_news": [
     {
-      "title": "今天北京将以多云为主气温回升 端午节当天将再现较明显雷雨",
-      "url": "http://news.weather.com.cn/2026/06/4678353.shtml",
+      "title": "聊天局——端午节哪里雨最大",
+      "url": "http://www.weather.com.cn/video/2026/06/4679671.shtml",
       "date": "2026-06-17",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "今天华南仍有强降雨明起主雨带北抬 新疆河南等地高温频繁",
-      "url": "http://news.weather.com.cn/2026/06/4677911.shtml",
+      "title": "北京端午节假期前期有雷阵雨 局地伴有大风或冰雹",
+      "url": "http://news.weather.com.cn/2026/06/4679642.shtml",
       "date": "2026-06-17",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 80
     },
     {
-      "title": "暴雨橙色预警！广东广西重庆等地部分地区有大暴雨 局地特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4678737.shtml",
+      "title": "​晴不过两天 端午雷雨上线",
+      "url": "http://www.weather.com.cn/video/2026/06/4679576.shtml",
       "date": "2026-06-17",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 80
     }
   ],
   "world_news": [
     {
-      "title": "Australian gov't announces record funding for elite athletes",
-      "url": "https://english.news.cn/20260617/eb3c8fa49e294c91a79f66d84b1ecd06/c.html",
-      "date": "2026-06-17 10:45:15",
+      "title": "China Focus: Global youth gather in China to explore AI-powered solutions",
+      "url": "https://english.news.cn/20260617/04e756a6ccbd4476a0deadc303c16ef0/c.html",
+      "date": "2026-06-17 19:04:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Xinhua News | China releases white paper on global governance",
-      "url": "https://english.news.cn/20260617/39f76c9f94094c628b041095ff002446/c.html",
-      "date": "2026-06-17 10:41:30",
+      "title": "Thai SME competitiveness slips in Q1 on cost pressures",
+      "url": "https://english.news.cn/20260617/a7f12ce0317e4a47a17b2364d57016ca/c.html",
+      "date": "2026-06-17 19:04:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "China accelerates establishment of World AI Cooperation Organization",
-      "url": "https://english.news.cn/20260617/e59de7a2162c4ec5bec90c1067105c69/c.html",
-      "date": "2026-06-17 10:38:45",
+      "title": "Global Governance Initiative offers Chinese wisdom for global poverty reduction: official",
+      "url": "https://english.news.cn/20260617/902e5b74b938481788a6bfe3b6b87fb6/c.html",
+      "date": "2026-06-17 19:01:15",
       "source": "新华网英文",
       "priority": 0
     }
