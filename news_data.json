@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-17 15:23:17",
+  "date": "2026-06-18 02:46:52",
   "china_news": [
     {
-      "title": "聊天局——端午节哪里雨最大",
-      "url": "http://www.weather.com.cn/video/2026/06/4679671.shtml",
-      "date": "2026-06-17",
+      "title": "端午注意防雨！广西未来三天降雨频繁 局地有大暴雨或特大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4679969.shtml",
+      "date": "2026-06-18",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "北京端午节假期前期有雷阵雨 局地伴有大风或冰雹",
-      "url": "http://news.weather.com.cn/2026/06/4679642.shtml",
-      "date": "2026-06-17",
+      "title": "独家解读——关注端午假期天气",
+      "url": "http://www.weather.com.cn/video/2026/06/4679775.shtml",
+      "date": "2026-06-18",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "​晴不过两天 端午雷雨上线",
-      "url": "http://www.weather.com.cn/video/2026/06/4679576.shtml",
-      "date": "2026-06-17",
+      "title": "今起强降雨将逐渐北抬至长江中下游等地 北方大部周末起将现降温",
+      "url": "http://news.weather.com.cn/2026/06/4679514.shtml",
+      "date": "2026-06-18",
       "source": "中国天气网",
-      "priority": 80
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Roundup: Türkiye seeks bigger share of global caviar market through investment, research",
-      "url": "https://english.news.cn/20260617/6ed255cc916d41c199c5bea756bb98e4/c.html",
-      "date": "2026-06-17 23:11:45",
+      "title": "Mexico's president opposes U.S. blockade against Cuba",
+      "url": "https://english.news.cn/20260618/c854b7dabab049529ccd5a3ed7f29b0f/c.html",
+      "date": "2026-06-18 10:33:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "China Focus: China calls for unity, confidence, action to improve global governance",
-      "url": "https://english.news.cn/20260617/7bf0ae68c6054ea68344897b5b83654f/c.html",
-      "date": "2026-06-17 22:57:15",
+      "title": "New Zealand GDP grows 0.8 pct in Q1",
+      "url": "https://english.news.cn/20260618/a3b2ffef581446479fb7474714a31292/c.html",
+      "date": "2026-06-18 10:23:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Urgent: China supports Iran's reasonable, legitimate claims -- Chinese FM",
-      "url": "https://english.news.cn/20260617/d490099644844a59848559d1ef166f20/c.html",
-      "date": "2026-06-17 22:56:45",
+      "title": "Lula calls Trump's new tariff threat against Brazil \"reckless\"",
+      "url": "https://english.news.cn/20260618/3ed27a83eb334f7e8452e9141b5ebad2/c.html",
+      "date": "2026-06-18 10:20:30",
       "source": "新华网英文",
       "priority": 0
     }
