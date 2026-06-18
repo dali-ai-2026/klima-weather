@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-18 02:46:52",
+  "date": "2026-06-18 10:41:44",
   "china_news": [
     {
-      "title": "端午注意防雨！广西未来三天降雨频繁 局地有大暴雨或特大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4679969.shtml",
+      "title": "端午节强降雨持续，暴雨大暴雨集中在长江中下游，北方多雷雨并伴有强对流天气",
+      "url": "http://news.weather.com.cn/2026/06/4680871.shtml",
       "date": "2026-06-18",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "独家解读——关注端午假期天气",
-      "url": "http://www.weather.com.cn/video/2026/06/4679775.shtml",
+      "title": "玩转端午！2026全国端午民俗游地图来了 带你解锁多样节日乐趣",
+      "url": "http://news.weather.com.cn/2026/06/4680307.shtml",
       "date": "2026-06-18",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "今起强降雨将逐渐北抬至长江中下游等地 北方大部周末起将现降温",
-      "url": "http://news.weather.com.cn/2026/06/4679514.shtml",
+      "title": "江苏今夜起降雨发展增强部分地区有暴雨 端午淮河以南地区将入梅",
+      "url": "http://news.weather.com.cn/2026/06/4680800.shtml",
       "date": "2026-06-18",
       "source": "中国天气网",
-      "priority": 40
+      "priority": 80
     }
   ],
   "world_news": [
     {
-      "title": "Mexico's president opposes U.S. blockade against Cuba",
-      "url": "https://english.news.cn/20260618/c854b7dabab049529ccd5a3ed7f29b0f/c.html",
-      "date": "2026-06-18 10:33:30",
+      "title": "GLOBALink | Business leaders from multinationals highlight China's market potential, development prospects",
+      "url": "https://english.news.cn/20260618/6d25c96b45f744548f67162f53d6b54a/c.html",
+      "date": "2026-06-18 18:32:31",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "New Zealand GDP grows 0.8 pct in Q1",
-      "url": "https://english.news.cn/20260618/a3b2ffef581446479fb7474714a31292/c.html",
-      "date": "2026-06-18 10:23:00",
+      "title": "Indonesia builds canal blocks in Riau to prevent forest fires",
+      "url": "https://english.news.cn/20260618/118dbc9e19c641b1aa9dcebe02ef5a3b/c.html",
+      "date": "2026-06-18 18:20:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Lula calls Trump's new tariff threat against Brazil \"reckless\"",
-      "url": "https://english.news.cn/20260618/3ed27a83eb334f7e8452e9141b5ebad2/c.html",
-      "date": "2026-06-18 10:20:30",
+      "title": "5 Hong Kong universities continue to rank among QS global top 100",
+      "url": "https://english.news.cn/20260618/c2c98b14c1714102a90ac9bf18513f41/c.html",
+      "date": "2026-06-18 18:15:30",
       "source": "新华网英文",
       "priority": 0
     }
