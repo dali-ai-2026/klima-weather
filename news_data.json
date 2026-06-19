@@ -1,23 +1,23 @@
 ﻿{
-  "date": "2026-06-19 03:31:52",
+  "date": "2026-06-19 10:51:01",
   "china_news": [
     {
-      "title": "端午假期期间安徽阴雨不断 今天多地雨势强劲局地有大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4681364.shtml",
+      "title": "端午假期长江中下游有暴雨大暴雨，华北东北雷雨频繁上线",
+      "url": "http://news.weather.com.cn/2026/06/4681843.shtml",
       "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "入梅！江苏端午假期期间将迎两轮较强降雨 多地有暴雨或强对流天气",
-      "url": "http://news.weather.com.cn/2026/06/4681323.shtml",
+      "title": "天气现场-端午假期首日 北京遇强降雨",
+      "url": "http://www.weather.com.cn/video/2026/06/4681839.shtml",
       "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "端午假期长江中下游多强降雨 华南一带高温将逐渐增多",
-      "url": "http://news.weather.com.cn/2026/06/4680531.shtml",
+      "title": "河南汝州端午迎蒙蒙细雨 荷花更显晶莹艳丽",
+      "url": "http://p.weather.com.cn/2026/06/4681659.shtml",
       "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
@@ -25,23 +25,23 @@
   ],
   "world_news": [
     {
-      "title": "Fire breaks out at Tokyo elementary school",
-      "url": "https://english.news.cn/20260619/c792372d48874b548ca41cea31b1d027/c.html",
-      "date": "2026-06-19 11:24:17",
+      "title": "Indonesia, Kuwait pledge closer energy cooperation amid global uncertainty",
+      "url": "https://english.news.cn/20260619/a76fdf5e9d924597893d237c854c6b6f/c.html",
+      "date": "2026-06-19 18:33:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "3.4-magnitude earthquake hits major Australian gold mine",
-      "url": "https://english.news.cn/20260619/26b67344b0554c92815d6f83eba49b56/c.html",
-      "date": "2026-06-19 11:22:30",
+      "title": "S. Korea says all communication channels with DPRK cut off",
+      "url": "https://english.news.cn/20260619/6aafccc091a943fcb924caf4c4c4f17b/c.html",
+      "date": "2026-06-19 18:27:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Feature: Young Vietnamese embrace traditional pest-killing festival",
-      "url": "https://english.news.cn/20260619/bd2aacbfc12e4d57891a88540f971372/c.html",
-      "date": "2026-06-19 11:20:15",
+      "title": "Research underway at National Modern TCM Innovation Center in Tianjin, N China",
+      "url": "https://english.news.cn/20260619/27d5dec0d4934518a38ecca7f1ba1161/c.html",
+      "date": "2026-06-19 18:06:13",
       "source": "新华网英文",
       "priority": 0
     }
