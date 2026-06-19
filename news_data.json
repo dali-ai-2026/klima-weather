@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-18 15:20:06",
+  "date": "2026-06-19 03:31:52",
   "china_news": [
     {
-      "title": "端午节强降雨持续，暴雨大暴雨集中在长江中下游，北方多雷雨并伴有强对流天气",
-      "url": "http://news.weather.com.cn/2026/06/4680871.shtml",
-      "date": "2026-06-18",
+      "title": "端午假期期间安徽阴雨不断 今天多地雨势强劲局地有大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4681364.shtml",
+      "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "玩转端午！2026全国端午民俗游地图来了 带你解锁多样节日乐趣",
-      "url": "http://news.weather.com.cn/2026/06/4680307.shtml",
-      "date": "2026-06-18",
+      "title": "入梅！江苏端午假期期间将迎两轮较强降雨 多地有暴雨或强对流天气",
+      "url": "http://news.weather.com.cn/2026/06/4681323.shtml",
+      "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "江苏今夜起降雨发展增强部分地区有暴雨 端午淮河以南地区将入梅",
-      "url": "http://news.weather.com.cn/2026/06/4680800.shtml",
-      "date": "2026-06-18",
+      "title": "端午假期长江中下游多强降雨 华南一带高温将逐渐增多",
+      "url": "http://news.weather.com.cn/2026/06/4680531.shtml",
+      "date": "2026-06-19",
       "source": "中国天气网",
       "priority": 80
     }
   ],
   "world_news": [
     {
-      "title": "China unveils action plan on coordinated development of platform enterprises",
-      "url": "https://english.news.cn/20260618/6575a6dbdabb4bf4a2f548f15cb3ff57/c.html",
-      "date": "2026-06-18 23:16:45",
+      "title": "Fire breaks out at Tokyo elementary school",
+      "url": "https://english.news.cn/20260619/c792372d48874b548ca41cea31b1d027/c.html",
+      "date": "2026-06-19 11:24:17",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Jordan, Germany sign deal to boost mega water desalination project",
-      "url": "https://english.news.cn/20260618/152d1cc68d864fda8862e3231af8192c/c.html",
-      "date": "2026-06-18 23:13:15",
+      "title": "3.4-magnitude earthquake hits major Australian gold mine",
+      "url": "https://english.news.cn/20260619/26b67344b0554c92815d6f83eba49b56/c.html",
+      "date": "2026-06-19 11:22:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "2 killed in septic tank incident in Vietnam's capital",
-      "url": "https://english.news.cn/20260618/178eca44fc3c4240bce03efa4d9b3ef2/c.html",
-      "date": "2026-06-18 23:03:45",
+      "title": "Feature: Young Vietnamese embrace traditional pest-killing festival",
+      "url": "https://english.news.cn/20260619/bd2aacbfc12e4d57891a88540f971372/c.html",
+      "date": "2026-06-19 11:20:15",
       "source": "新华网英文",
       "priority": 0
     }
