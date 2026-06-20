@@ -1,5 +1,5 @@
 ﻿{
-  "date": "2026-06-20 02:36:27",
+  "date": "2026-06-20 09:30:09",
   "china_news": [
     {
       "title": "北京今天雨水暂歇风力加大 端午假期后两天以晴或多云为主",
@@ -9,39 +9,39 @@
       "priority": 80
     },
     {
-      "title": "长江中下游降雨频繁明起雨势再增强 华南一带高温天气迅速发展 ",
-      "url": "http://news.weather.com.cn/2026/06/4681582.shtml",
+      "title": "华南高温快速增多",
+      "url": "http://www.weather.com.cn/video/2026/06/4682442.shtml",
       "date": "2026-06-20",
       "source": "中国天气网",
       "priority": 40
     },
     {
-      "title": "暴雨黄色预警：广西贵州湖南等地部分地区有大暴雨",
-      "url": "http://news.weather.com.cn/2026/06/4682358.shtml",
+      "title": "长江中下游降雨频繁明起雨势再增强 华南一带高温天气迅速发展 ",
+      "url": "http://news.weather.com.cn/2026/06/4681582.shtml",
       "date": "2026-06-20",
       "source": "中国天气网",
-      "priority": 10
+      "priority": 40
     }
   ],
   "world_news": [
     {
-      "title": "Flash: Brazil trounces Haiti 3-0 to top Group C at World Cup",
-      "url": "https://english.news.cn/20260620/f3109365839549179e43f9bac6425a01/c.html",
-      "date": "2026-06-20 10:32:30",
+      "title": "Paraguay regains belief, says Alfaro",
+      "url": "https://english.news.cn/20260620/046592fabcc345a5886764cb7a9d302a/c.html",
+      "date": "2026-06-20 16:58:00",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Chinese-language audio guide systems launched at museums of Chilean Nobel laureate Pablo Neruda",
-      "url": "https://english.news.cn/20260620/0c0df0c90fe24855aca528d1298abead/c.html",
-      "date": "2026-06-20 10:19:45",
+      "title": "Former senior official of Xinjiang under probe",
+      "url": "https://english.news.cn/20260620/97a16fc48ac540c297f2e2957800d8c0/c.html",
+      "date": "2026-06-20 16:37:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Francisco Carvalho sworn in as Cabo Verde's PM",
-      "url": "https://english.news.cn/20260620/b9e7115d070349e1a623c971357abc25/c.html",
-      "date": "2026-06-20 10:11:45",
+      "title": "Letter from Mideast: A legacy of pain -- generations of Sudanese relive cycle of displacement",
+      "url": "https://english.news.cn/20260620/e394d3b2efe74ae7a0ff9acba9e432e3/c.html",
+      "date": "2026-06-20 16:33:15",
       "source": "新华网英文",
       "priority": 0
     }
