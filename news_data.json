@@ -1,47 +1,47 @@
 ﻿{
-  "date": "2026-06-19 15:11:11",
+  "date": "2026-06-20 02:36:27",
   "china_news": [
     {
-      "title": "端午假期长江中下游有暴雨大暴雨，华北东北雷雨频繁上线",
-      "url": "http://news.weather.com.cn/2026/06/4681843.shtml",
-      "date": "2026-06-19",
+      "title": "北京今天雨水暂歇风力加大 端午假期后两天以晴或多云为主",
+      "url": "http://news.weather.com.cn/2026/06/4681943.shtml",
+      "date": "2026-06-20",
       "source": "中国天气网",
       "priority": 80
     },
     {
-      "title": "天气现场-端午假期首日 北京遇强降雨",
-      "url": "http://www.weather.com.cn/video/2026/06/4681839.shtml",
-      "date": "2026-06-19",
+      "title": "长江中下游降雨频繁明起雨势再增强 华南一带高温天气迅速发展 ",
+      "url": "http://news.weather.com.cn/2026/06/4681582.shtml",
+      "date": "2026-06-20",
       "source": "中国天气网",
-      "priority": 80
+      "priority": 40
     },
     {
-      "title": "河南汝州端午迎蒙蒙细雨 荷花更显晶莹艳丽",
-      "url": "http://p.weather.com.cn/2026/06/4681659.shtml",
-      "date": "2026-06-19",
+      "title": "暴雨黄色预警：广西贵州湖南等地部分地区有大暴雨",
+      "url": "http://news.weather.com.cn/2026/06/4682358.shtml",
+      "date": "2026-06-20",
       "source": "中国天气网",
-      "priority": 80
+      "priority": 10
     }
   ],
   "world_news": [
     {
-      "title": "Morocco captain Achraf to face trial for 2023 rape allegation",
-      "url": "https://english.news.cn/20260619/a2671da39f77496ca54b8d21c0fbf83e/c.html",
-      "date": "2026-06-19 23:04:45",
+      "title": "Flash: Brazil trounces Haiti 3-0 to top Group C at World Cup",
+      "url": "https://english.news.cn/20260620/f3109365839549179e43f9bac6425a01/c.html",
+      "date": "2026-06-20 10:32:30",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "India's forex reserves fall by nearly 10 bln USD",
-      "url": "https://english.news.cn/20260619/537854a099e5498c96fec1abcb0a4f86/c.html",
-      "date": "2026-06-19 23:04:30",
+      "title": "Chinese-language audio guide systems launched at museums of Chilean Nobel laureate Pablo Neruda",
+      "url": "https://english.news.cn/20260620/0c0df0c90fe24855aca528d1298abead/c.html",
+      "date": "2026-06-20 10:19:45",
       "source": "新华网英文",
       "priority": 0
     },
     {
-      "title": "Flash: Israel launches strike on S. Lebanon after ceasefire report -- media",
-      "url": "https://english.news.cn/20260619/5ff19f3c06c34c83913b13b36b737335/c.html",
-      "date": "2026-06-19 22:58:30",
+      "title": "Francisco Carvalho sworn in as Cabo Verde's PM",
+      "url": "https://english.news.cn/20260620/b9e7115d070349e1a623c971357abc25/c.html",
+      "date": "2026-06-20 10:11:45",
       "source": "新华网英文",
       "priority": 0
     }
